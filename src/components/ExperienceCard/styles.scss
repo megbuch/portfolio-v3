@@ -1,0 +1,58 @@
+#experience-card {
+  margin: var(--margin-sm) 0;
+  padding: var(--pad-lg);
+  z-index: 400;
+
+  &.row {
+    gap: var(--pad-xl);
+  }
+  
+  .date {
+    min-width: 200px;
+  }
+  
+  .content-ctr {
+    gap: var(--pad-md);
+  
+    ul {
+      gap: var(--pad-sm);
+    }
+
+    .company, .title {
+      letter-spacing: 1px;
+      font-size: var(--font-size-body-lg);
+    }
+    
+    .company {
+      font-weight: var(--font-weight-bold);
+    }
+    
+    .location {
+      letter-spacing: 1px;
+      font-size: var(--font-size-body-xs);
+      text-transform: uppercase;
+    }
+
+    .technologies {
+      flex-wrap: wrap;
+      gap: var(--pad-sm);
+      font-size: var(--font-size-body-sm);
+      
+      .icon {
+        font-size: 5px;
+      }
+
+      div {
+        background-color: var(--color-primary);
+        padding: var(--pad-xs) var(--pad-sm);
+        border-radius: var(--corner-radius-sm);
+      }
+    }
+  }
+  
+  &:hover {
+    cursor: pointer;
+    border-radius: var(--corner-radius);
+    background-color: var(--color-surface);
+  }
+}

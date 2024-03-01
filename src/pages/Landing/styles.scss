@@ -1,51 +1,17 @@
 #landing-page {
   gap: var(--pad-xl);
 
+  .header {
+    margin: var(--margin-lg) 0;
+
+    .links {
+      gap: var(--pad-sm);
+      font-size: var(--font-size-icons);
+      margin-top: var(--margin-md);
+    }
+  }
+  
   .section {
     gap: var(--pad-md);
   }
-  
-  .experience-cell {
-    margin: var(--margin-sm) 0;
-    padding: var(--pad-lg);
-    z-index: 400;
-
-    &.row {
-      gap: var(--pad-xl);
-    }
-    
-    .date {
-      min-width: 200px;
-    }
-    
-    .content-ctr {
-      gap: var(--pad-md);
-    
-      ul {
-        gap: var(--pad-xs);
-      }
-  
-      .company, .title {
-        letter-spacing: 1px;
-        font-size: var(--font-size-body-lg);
-      }
-      
-      .company {
-        font-weight: var(--font-weight-bold);
-      }
-      
-      .location {
-        letter-spacing: 1px;
-        font-size: var(--font-size-body-sm);
-      }
-    }
-    
-    &:hover {
-      cursor: pointer;
-      border-radius: var(--corner-radius);
-      background-color: var(--color-surface);
-    }
-  }
-  
-
 }

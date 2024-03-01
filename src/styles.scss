@@ -6,14 +6,14 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --color-background: #1d212e;
+  --color-background: #161616;
   --color-on-background: #deddec;
 
   --color-surface: rgba(255, 255, 255, 0.055);
   --color-on-surface: #deddec;
 
-  --color-primary:
-  --color-on-primary:
+  --color-primary: rgba(255, 86, 56, 0.644);
+  --color-on-primary: #fff;
 
   --color-secondary:
   --color-on-secondary:
@@ -27,11 +27,13 @@
 
   --font-size-h1: 56px;
   --font-size-h2: 24px;
+  --font-size-body-xs: 10px;
   --font-size-body-sm: 12px;
   --font-size-body-md: 15px;
   --font-size-body-lg: 17px;
-  
-  --pad-xs: 6px;
+  --font-size-icons: 26px;
+
+  --pad-xs: 3px;
   --pad-sm: 8px;
   --pad-md: 16px;
   --pad-lg: 24px;
@@ -42,6 +44,7 @@
   --margin-md: 16px;
   --margin-lg: 24px;
 
+  --corner-radius-sm: 2px;
   --corner-radius: 4px;
 }
 
@@ -69,11 +72,17 @@ h1 {
 
 h2 {
   font-size: var(--font-size-h2);
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-light);
+  letter-spacing: 1px;
 }
 
 ul {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-on-background);
 }
 
 .subtitle {
