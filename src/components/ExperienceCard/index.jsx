@@ -6,7 +6,7 @@ export default function ExperienceCard(props) {
 
   return (
     <Link to={e.website} target='_blank'>
-      <div className='experience-card-comp row'>
+      <div className='experience-card-comp col'>
         <p className='date'>{e.date}</p>
         <div className='col content-ctr'>
           <div>

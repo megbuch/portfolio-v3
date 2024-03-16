@@ -5,15 +5,17 @@
   border-radius: var(--corner-radius);
   transition: ease-in-out box-shadow 400ms, background-color 400ms, transform 400ms;
 
+  &.col {
+    @media (min-width: 1200px) {
+      flex-direction: row;
+    }
+  }
+  
   &:hover {
     cursor: pointer;
     background-color: var(--color-surface);
     box-shadow: var(--box-shadow);
     transform: translateX(3px);
-  }
-
-  &.row {
-    gap: var(--pad-xl);
   }
   
   .date {
