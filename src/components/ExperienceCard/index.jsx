@@ -5,22 +5,22 @@ export default function ExperienceCard(props) {
   const {experience: e} = props
 
   return (
-    <Link to={e.website} target="_blank">
-      <div id="experience-card" className="row">
-        <p className="date">{e.date}</p>
-        <div className="col content-ctr">
+    <Link to={e.website} target='_blank'>
+      <div className='experience-card-comp row'>
+        <p className='date'>{e.date}</p>
+        <div className='col content-ctr'>
           <div>
-            <p className="company">{e.company}</p>
-            <p className="title">{e.title}</p>
+            <p className='company'>{e.company}</p>
+            <p className='title'>{e.title}</p>
           </div>
-          <p className="location">{e.location}</p>
-          <ul className="col">
+          <p className='subtitle-sm'>{e.location}</p>
+          <ul className='col'>
             {e.duties.map((duty, index) => (
-              <li key={index}>- {duty}</li>
+              <li key={index}>{duty}</li>
             ))}
           </ul>
-          <div className="technologies row">
-            {e.technologies.map((technology, index) => (
+          <div className='technologies row'>
+            {e.technologies.sort().map((technology, index) => (
               <div key={index}>{technology}</div>
             ))}
           </div>

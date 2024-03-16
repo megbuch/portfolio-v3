@@ -1,0 +1,42 @@
+.project-card-comp {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-height: 280px;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  border-radius: var(--corner-radius);
+  transition: ease-in-out transform 400ms;
+
+  &:hover {
+    cursor: pointer;
+    transform: translateX(3px);
+  }
+  
+  img {
+    object-fit: cover;
+    object-position: top;
+    z-index: 100;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.603), rgba(0, 0, 0, 0));
+    z-index: 200;
+  }
+
+  p {
+    position: absolute;
+    left: 3%;
+    bottom: 5%;
+    z-index: 300;
+    font-size: var(--font-size-subtitle);
+    letter-spacing: 1px;
+    color: white;
+  }
+}

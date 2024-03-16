@@ -1,8 +1,8 @@
 #landing-page {
-  gap: var(--pad-xl);
+  gap: var(--pad-md);
 
   .header {
-    margin: var(--margin-lg) 0;
+    margin: var(--margin-lg) 0 0 0;
 
     .links {
       gap: var(--pad-sm);
@@ -13,5 +13,33 @@
   
   .section {
     gap: var(--pad-md);
+
+    .text-image-container {
+      justify-content: center;
+      align-items: center;
+      gap: var(--pad-lg);
+
+      @media (min-width: 800px) {
+        flex-direction: row-reverse;
+        gap: var(--pad-xxl);
+      }
+
+      p {
+        flex-grow: 1;
+      }
+
+      .overlay {
+        overflow: hidden;
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+        flex-shrink: 0;
+  
+        img {
+          width: 100%;
+        }
+      }
+    }
   }
+
 }

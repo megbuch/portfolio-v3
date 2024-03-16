@@ -1,7 +1,16 @@
-#experience-card {
+.experience-card-comp {
   margin: var(--margin-sm) 0;
   padding: var(--pad-lg);
   z-index: 400;
+  border-radius: var(--corner-radius);
+  transition: ease-in-out box-shadow 400ms, background-color 400ms, transform 400ms;
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--color-surface);
+    box-shadow: var(--box-shadow);
+    transform: translateX(3px);
+  }
 
   &.row {
     gap: var(--pad-xl);
@@ -12,7 +21,7 @@
   }
   
   .content-ctr {
-    gap: var(--pad-md);
+    gap: var(--pad-sm);
   
     ul {
       gap: var(--pad-sm);
@@ -24,7 +33,7 @@
     }
     
     .company {
-      font-weight: var(--font-weight-bold);
+      font-weight: var(--font-weight-bolder);
     }
     
     .location {
@@ -35,24 +44,20 @@
 
     .technologies {
       flex-wrap: wrap;
+      margin: var(--margin-sm) 0;
       gap: var(--pad-sm);
-      font-size: var(--font-size-body-sm);
       
       .icon {
         font-size: 5px;
       }
-
+      
       div {
         background-color: var(--color-primary);
+        color: var(--color-on-primary);
+        font-size: var(--font-size-body-sm);
         padding: var(--pad-xs) var(--pad-sm);
         border-radius: var(--corner-radius-sm);
       }
     }
-  }
-  
-  &:hover {
-    cursor: pointer;
-    border-radius: var(--corner-radius);
-    background-color: var(--color-surface);
   }
 }
