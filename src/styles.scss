@@ -31,8 +31,10 @@
   --font-weight-bolder: 600;
   --font-weight-boldest: 700;
 
-  --font-size-title: 56px;
-  --font-size-subtitle: 24px;
+  --font-size-title: 48px;
+  --font-size-title-lg: 56px;
+  --font-size-subtitle: 20px;
+  --font-size-subtitle-lg: 24px;
   --font-size-body-xs: 10px;
   --font-size-body-sm: 12px;
   --font-size-body-md: 14px;
@@ -80,10 +82,9 @@ body {
 }
 
 .page-container {
-  padding: var(--pad-lg);
   width: 90vw;
 
-  @media (min-width: 1400px) { width: 70vw; }
+  @media (min-width: 1200px) { width: 70vw; }
   @media (min-width: 1600px) { width: 50vw; }
 }
 
@@ -91,12 +92,16 @@ h1 {
   font-size: var(--font-size-title);
   font-weight: var(--font-weight-bold);
   letter-spacing: -3px;
+
+  @media (min-width: 600px) { font-size: var(--font-size-title-lg); }
 }
 
 h2 {
   font-size: var(--font-size-subtitle);
   font-weight: var(--font-weight-medium);
   letter-spacing: 1px;
+
+  @media (min-width: 600px) { font-size: var(--font-size-subtitle-lg); }
 }
 
 ul {
