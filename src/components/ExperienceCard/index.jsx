@@ -24,7 +24,6 @@ export default function ExperienceCard(props) {
               <div key={index}>{technology}</div>
             ))}
           </div>
-          {}
         </div>
       </div>
     </Link>

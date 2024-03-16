@@ -20,7 +20,7 @@ export default function LandingPage() {
       </div>
       {/* About Section */}
       <div className='section col'>
-        <p className='subtitle'>About.</p>
+        <p className='subtitle'>About</p>
         <div className='text-image-container col'>
           <div className='overlay'>
             <img src={headshotImage} />
@@ -30,7 +30,7 @@ export default function LandingPage() {
       </div>
       {/* Experience Section */}
       <div className='section col'>
-        <p className='subtitle'>Experience.</p>
+        <p className='subtitle'>Experience</p>
         <p>Download Resume</p>
         <div className='col'>
           {experiences.map((experience, index) => (
@@ -41,10 +41,12 @@ export default function LandingPage() {
       </div>
       {/* Projects Section */}
       <div className='section col'>
-        <p className='subtitle'>Projects.</p>
-        {projects.map((project, index) => (
-          <ProjectCard key={index} project={project} />
-        ))}
+        <p className='subtitle'>Projects</p>
+        <div className='projects-container col'>
+          {projects.map((project, index) => (
+            <ProjectCard key={index} project={project} />
+          ))}
+        </div>
         <p>View More</p>
       </div>  
     </div>

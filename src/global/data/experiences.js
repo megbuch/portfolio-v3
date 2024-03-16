@@ -28,7 +28,7 @@ export const experiences = [
     company: 'SpaceLab',
     title: 'Web Developer',
     location: 'Remote',
-    date: 'March 2023 - May 2023',
+    date: 'Mar 2023 - May 2023',
     website: 'https://spacelab.space/',
     duties: [
       'Developed the React.js front-end for SpaceLab’s numerous projects and campaigns.',
@@ -47,7 +47,8 @@ export const experiences = [
     company: 'General Assembly',
     title: 'Software Engineering Fellow',
     location: 'Remote',
-    date: 'December 2022 - March 2023',
+    date: 'Dec 2022 - Mar 2023',
+
     website: 'https://generalassemb.ly/',
     duties: [
       'Completed a 12-week intensive Software Engineering Immersive program, dedicating 500+ rigorous hours to mastering full stack web development, following several months of rigorous self-study.',

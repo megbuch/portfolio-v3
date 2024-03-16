@@ -41,23 +41,5 @@
       font-size: var(--font-size-body-xs);
       text-transform: uppercase;
     }
-
-    .technologies {
-      flex-wrap: wrap;
-      margin: var(--margin-sm) 0;
-      gap: var(--pad-sm);
-      
-      .icon {
-        font-size: 5px;
-      }
-      
-      div {
-        background-color: var(--color-primary);
-        color: var(--color-on-primary);
-        font-size: var(--font-size-body-sm);
-        padding: var(--pad-xs) var(--pad-sm);
-        border-radius: var(--corner-radius-sm);
-      }
-    }
   }
 }

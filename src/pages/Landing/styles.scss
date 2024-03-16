@@ -1,5 +1,5 @@
 #landing-page {
-  gap: var(--pad-md);
+  gap: var(--pad-xl);
 
   .header {
     margin: var(--margin-lg) 0 0 0;
@@ -40,6 +40,11 @@
         }
       }
     }
-  }
 
+    
+    .projects-container {
+      gap: var(--pad-sm);
+      margin: var(--margin-md) 0;
+    }
+  }
 }
