@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import ExperienceCard from '../../components/ExperienceCard'
 import ProjectCard from '../../components/ProjectCard'
 import headshotImage from '../../assets/headshot.jpg'
@@ -41,13 +42,13 @@ export default function LandingPage() {
       </div>
       {/* Projects Section */}
       <div className='section col'>
-        <p className='subtitle'>Projects</p>
+        <p className='subtitle'>Featured Projects</p>
+        <Link to='/projects'>View Archive</Link>
         <div className='projects-container col'>
           {projects.map((project, index) => (
             <ProjectCard key={index} project={project} />
           ))}
         </div>
-        <p>View More</p>
       </div>  
     </div>
 	)

@@ -1,4 +1,6 @@
 .experience-card-comp {
+  color: var(--color-on-surface);
+  font-weight: var(--font-weight-medium);
   margin: var(--margin-sm) 0;
   padding: var(--pad-lg);
   z-index: 400;
@@ -13,7 +15,6 @@
   
   &:hover {
     cursor: pointer;
-    background-color: var(--color-surface);
     box-shadow: var(--box-shadow);
     transform: translateX(3px);
   }

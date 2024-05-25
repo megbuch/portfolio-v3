@@ -1,6 +1,7 @@
 import exploriaImage from '../../assets/exploria.png'
 import npcgenImage from '../../assets/npcgen.png'
 import ledgerlyImage from '../../assets/ledgerly.png'
+import portfolioV2Image from '../../assets/portfolio-v2.png'
 
 export const projects = [
   {
@@ -27,5 +28,12 @@ export const projects = [
     githubLink: 'https://github.com/megbuch/ledgerly',
     technologies: ['JavaScript', 'HTML', 'CSS', 'React', 'Node.js', 'Express', 'MongoDB', 'Token-Based Authentication']
   },
-
+  {
+    name: 'Portfolio v2',
+    description: 'TODO',
+    image: portfolioV2Image,
+    deployedLink: 'https://meghanbucher-v2.netlify.app/',
+    githubLink: 'https://github.com/megbuch/portfolio-v2',
+    technologies: ['JavaScript', 'React', 'HTML', 'SCSS']
+  },
 ]
