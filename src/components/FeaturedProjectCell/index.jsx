@@ -19,11 +19,8 @@ export default function FeaturedProjectCell(props) {
           ))}
         </div>
         <div className='row links'>
-          {project.deployed 
-            ? <Link to={project.deployedLink} target='_blank'>Preview</Link>
-            : <p className='subtitle-sm'>Project not deployed</p>
-          }
           <Link to={project.githubLink} target='_blank'>GitHub</Link>
+          {project.deployed && <Link to={project.deployedLink} target='_blank'>Live Preview</Link>}
         </div>
       </div>
     </div>

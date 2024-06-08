@@ -5,10 +5,12 @@ import '../../styles.scss'
 
 function App() {
   return (
-    <Routes>
-      <Route path='/' element={<LandingPage />} />
-      <Route path='/projects' element={<ProjectsPage />} />
-    </Routes>
+    <>
+      <Routes>
+        <Route path='/' element={<LandingPage />} />
+        <Route path='/projects' element={<ProjectsPage />} />
+      </Routes>
+    </>
   )
 }
 

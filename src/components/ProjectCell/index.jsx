@@ -7,13 +7,10 @@ export default function ProjectCell(props) {
   return (
     <div className='project-cell-comp col'>
       <p className='name'>{project.name}</p>
-      <p className='subtitle-sm'>{project.description}</p>
+      <p>{project.description}</p>
       <div className='row links'>
-        {project.deployed 
-          ? <Link to={project.deployedLink} target='_blank'>Preview</Link>
-          : <p className='subtitle-sm'>Project not deployed</p>
-        }
         <Link to={project.githubLink} target='_blank'>GitHub</Link>
+        {project.deployed && <Link to={project.deployedLink} target='_blank'>Live Preview</Link>}
       </div>
       <img src={project.image} />
     </div>

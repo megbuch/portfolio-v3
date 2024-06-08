@@ -1,0 +1,13 @@
+.footer-comp {
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--corner-radius);
+  padding: var(--pad-lg);
+  
+  .links {
+    display: flex;
+    justify-content: center;
+    gap: var(--pad-lg);
+    margin-bottom: var(--pad-md);
+  }
+}

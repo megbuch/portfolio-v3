@@ -47,7 +47,7 @@ export default function LandingPage() {
             <FeaturedProjectCell key={index} project={project} />
           ))}
         </div>
-      </div>  
+      </div>
     </div>
 	)
 }
