@@ -7,8 +7,10 @@
 
   .projects-list {
     margin: var(--margin-md) 0;
-    column-count: 2;
+    column-count: 1;
     column-gap: var(--pad-lg);
+
+    @media (min-width: 600px) { column-count: 2; }
 
     .project {
       break-inside: avoid;
