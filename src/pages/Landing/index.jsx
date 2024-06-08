@@ -3,6 +3,7 @@ import ExperienceCell from '../../components/ExperienceCell'
 import FeaturedProjectCell from '../../components/FeaturedProjectCell'
 import { experiences, featuredProjects, profile } from '../../global/data'
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import resume from '../../assets/resume.pdf'
 import './styles.scss'
 
 export default function LandingPage() {
@@ -30,7 +31,7 @@ export default function LandingPage() {
       {/* Experience Section */}
       <div className='section col'>
         <p className='subtitle'>Experience</p>
-        <p>View Resume</p>
+        <Link to={resume} target="_blank" rel="noopener noreferrer">View Resume</Link>
         <div className='col'>
           {experiences.map((experience, index) => (
             <ExperienceCell key={index} experience={experience} />
