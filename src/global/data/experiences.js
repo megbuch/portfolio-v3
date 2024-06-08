@@ -6,9 +6,10 @@ export const experiences = [
     date: 'May 2023 - Present',
     website: 'https://mtigs.com/',
     duties: [
-      'Design and develop large-scale, enterprise access management software, ensuring robust, performant, and highly-secure solutions for a broad array of Fortune 100 clients.',
-      'Conduct thorough testing and maintain the highest standards of quality to deliver exceptional performance and reliability.',
-      'Own the full-cycle design and development of our native Android application, used for access management of IoT devices.',
+      'Design and develop large-scale, enterprise-grade access management web applications, ensuring robust, performant, and highly-secure solutions used by a broad array of Fortune 100 clients in retail, healthcare, technology, and other industries.',
+      'Lead the full-cycle design and development of our native Android applications, used for access management of IoT devices.',
+      'Perform code reviews, conduct thorough testing, and ensure all development adheres to established best practices.',
+      'Continuously research and integrate solutions to improve performance, scalability, and reliability.',
       'Build SDKs that enable B2B clients to leverage our wireless communication software within their own platforms.'
     ],
     technologies: [

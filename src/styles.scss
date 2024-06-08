@@ -7,23 +7,24 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --color-background: linear-gradient(160deg, #97f8b465 0%, #201dca00 34%), #ebb88e;
-  --color-on-background: black;
+  --color-background: #f0cfba;
+  --color-on-background: #252525;
 
   --color-surface:  #fff7f3;
-  --color-on-surface: black;
+  --color-on-surface: #252525;
 
-  --color-primary: #83964ff1;
-  --color-primary-alternative: #5b721af1;
+  --color-primary: #b95254;
+  --color-primary-alternative: #b83d3f;
   --color-on-primary: #fff;
 
-  --color-secondary: #e78c78;
+  --color-secondary: #e2885f;
   --color-on-secondary: #fff;
 
   --color-neutral: #5c5c5c;
-  --color-on-neutral: #000;
+  --color-neutral-light: #e6e6e6;
+  --color-on-neutral: #252525;
 
-  --color-shadow: #03030371;
+  --color-shadow: #03030323;
 
   --font-weight-lightest: 200;
   --font-weight-light: 300;
@@ -142,6 +143,7 @@ a {
 
 .row {
   display: flex;
+  align-items: center;
 }
 
 .col {

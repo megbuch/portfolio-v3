@@ -1,0 +1,21 @@
+.project-cell-comp {
+  padding: var(--pad-lg);
+  gap: var(--pad-md);
+  border-radius: var(--corner-radius);
+  box-shadow: var(--box-shadow);
+
+  .name {
+    font-size: var(--font-size-subtitle);
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: var(--corner-radius);
+  }
+
+  .links { 
+    gap: var(--pad-md); 
+  }
+}

@@ -1,0 +1,18 @@
+#projects-page {
+  .back-icon { 
+    font-size: var(--font-size-title);
+    transform: translateY(8px);
+    margin-right: var(--margin-lg);
+  }
+
+  .projects-list {
+    margin: var(--margin-md) 0;
+    column-count: 2;
+    column-gap: var(--pad-lg);
+
+    .project {
+      break-inside: avoid;
+      margin-bottom: var(--margin-lg);
+    }
+  }
+}
