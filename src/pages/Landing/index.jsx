@@ -1,50 +1,76 @@
 import { Link } from 'react-router-dom'
-import ExperienceCell from '../../components/ExperienceCell'
-import FeaturedProjectCell from '../../components/FeaturedProjectCell'
-import { experiences, featuredProjects, profile } from '../../global/data'
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import { 
+  profileData, 
+  experienceData, 
+  educationData,
+  certificationData,
+  featuredProjectsData 
+} from '../../global/data'
+import { 
+  ExperienceCell, 
+  EducationCell, 
+  FeaturedProjectCell 
+} from '../../components'
 import resume from '../../assets/resume.pdf'
 import './styles.scss'
+import CertificationCell from '../../components/CertificationCell';
 
 export default function LandingPage() {
 	return (
 		<div id='landing-page' className='col page-container'>
       <div className='header col'>
-        <h1>{profile.name}</h1>
-        <h2>{`${profile.role} at ${profile.company}`}</h2>
-        <p>{profile.contact.email}</p>
+        <h1>{profileData.name}</h1>
+        <h2>{`${profileData.role} at ${profileData.company}`}</h2>
+        <p>{profileData.contact.email}</p>
         <div className='links row'>
-          <Link to={profile.links.linkedIn} target='_blank'><FaLinkedin /></Link>
-          <Link to={profile.links.gitHub} target='_blank'><FaGithub /></Link>
+          <Link to={profileData.links.linkedIn} target='_blank'><FaLinkedin /></Link>
+          <Link to={profileData.links.gitHub} target='_blank'><FaGithub /></Link>
         </div>
       </div>
-      {/* About Section */}
+      {/* About */}
       <div className='section col'>
-        <p className='subtitle'>About</p>
         <div className='text-image-container col'>
           <div className='overlay'>
-            <img src={profile.avatar} />
+            <img src={profileData.avatar} />
           </div>
-          <p className='bio'>{profile.bio}</p>
+          <p className='bio'>{profileData.bio}</p>
         </div>
       </div>
-      {/* Experience Section */}
+      {/* Experience */}
       <div className='section col'>
         <p className='subtitle'>Experience</p>
         <Link to={resume} target="_blank" rel="noopener noreferrer">View Resume</Link>
         <div className='col'>
-          {experiences.map((experience, index) => (
+          {experienceData.map((experience, index) => (
             <ExperienceCell key={index} experience={experience} />
           ))}
         </div>
-
       </div>
-      {/* Projects Section */}
+      {/* Education */}
+      <div className='section col'>
+        <p className='subtitle'>Education</p>
+        <div className='col'>
+          {educationData.map((education, index) => (
+            <EducationCell key={index} education={education} />
+          ))}
+        </div>
+      </div>
+      {/* Certifications */}
+      <div className='section col'>
+        <p className='subtitle'>Certifications</p>
+        <div className='col'>
+          {certificationData.map((certification, index) => (
+            <CertificationCell key={index} certification={certification} />
+          ))}
+        </div>
+      </div>
+      {/* Projects */}
       <div className='section col'>
         <p className='subtitle'>Featured Projects</p>
         <Link to='/projects'>View More</Link>
         <div className='projects-container col'>
-          {featuredProjects.map((project, index) => (
+          {featuredProjectsData.map((project, index) => (
             <FeaturedProjectCell key={index} project={project} />
           ))}
         </div>

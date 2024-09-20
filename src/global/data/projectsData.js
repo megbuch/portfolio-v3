@@ -10,7 +10,7 @@ import simonSaysImage from '../../assets/simon-says.png'
 import spacelabMainImage from '../../assets/spacelab-main.png'
 import spacelabParticipationImage from '../../assets/spacelab-participation.png'
 
-export const featuredProjects = [
+export const featuredProjectsData = [
   {
     name: 'Exploria',
     description: 'Discover your next great adventure with Exploria. Powered by the National Park Service API, Exploria delivers real-time, detailed information on all 400+ U.S. National Parks.',
@@ -49,7 +49,7 @@ export const featuredProjects = [
   },
 ]
 
-export const projects = [
+export const projectsData = [
   {
     name: 'Exploria',
     description: 'Discover your next great adventure with Exploria. Powered by the National Park Service API, Exploria delivers real-time, detailed information on all 400+ U.S. National Parks.',

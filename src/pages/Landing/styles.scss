@@ -1,6 +1,4 @@
 #landing-page {
-  gap: var(--pad-xl);
-
   .header {
     .links {
       gap: var(--pad-sm);
@@ -11,24 +9,22 @@
   
   .section {
     gap: var(--pad-md);
+    margin-bottom: var(--pad-xxl);
+    &:last-child { margin-bottom: 0; }
 
     .bio {
       font-size: var(--font-size-body-lg);
     }
 
     .text-image-container {
+      margin-top: var(--pad-md);
       justify-content: center;
       align-items: center;
       gap: var(--pad-lg);
 
-      @media (min-width: 800px) {
-        flex-direction: row-reverse;
-        gap: var(--pad-xxl);
-      }
+      @media (min-width: 800px) { flex-direction: row-reverse; }
 
-      p {
-        flex-grow: 1;
-      }
+      p { flex-grow: 1; }
 
       .overlay {
         overflow: hidden;

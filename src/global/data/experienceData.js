@@ -1,4 +1,4 @@
-export const experiences = [
+export const experienceData = [
   {
     company: 'MTI - Mobile Technologies, Inc.',
     title: 'Front End Engineer',
@@ -6,35 +6,36 @@ export const experiences = [
     date: 'May 2023 - Present',
     website: 'https://mtigs.com/',
     duties: [
-      'Design and develop large-scale, enterprise-grade access management web applications, ensuring robust, performant, and highly-secure solutions used by a broad array of Fortune 100 clients in retail, healthcare, technology, and other industries.',
-      'Lead the full-cycle design and development of our native Android applications, used for access management of IoT devices.',
-      'Perform code reviews, conduct thorough testing, and ensure all development adheres to established best practices.',
-      'Continuously research and integrate solutions to improve performance, scalability, and reliability.',
-      'Build SDKs that enable B2B clients to leverage our wireless communication software within their own platforms.'
+      'Design and develop large-scale, enterprise-grade access management web and mobile applications, ensuring robust, performant, and highly-secure solutions used by a broad array of Fortune 100 clients in retail, healthcare, technology, and other industries.',
+      'Rebuilt the enterprise front end (React) application from the ground up, delivering the third-generation platform with enhanced performance, scalability, and user experience.',
+      'Led the design and development of our native Android (Java) and iOS (Swift) applications for IoT device access management, enabling in-store employees to securely unlock Bluetooth-enabled smart locks.',
+      'Currently leading the full-cycle development of both Android (Java) and iOS (Swift) SDKs, enabling B2B clients to leverage our proprietary wireless communication technology into their existing mobile applications.',
+      'Provide thorough code reviews, conduct thorough testing, and ensure all development adheres to established best practices.'
     ],
     technologies: [
       'JavaScript', 
       'React', 
       'Electron', 
       'Node.js', 
-      'Java', 
+      'Java',
+      'Swift',
       'Ruby on Rails', 
       'PostgreSQL', 
       'HTML', 
       'CSS & SCSS', 
       'Android Development', 
+      'iOS Development',
       'Web Development'
     ]
   }, {
     company: 'SpaceLab',
-    title: 'Web Developer',
+    title: 'Software Engineering Intern',
     location: 'Remote',
     date: 'Mar 2023 - May 2023',
     website: 'https://spacelab.space/',
     duties: [
-      'Developed the React.js front-end for SpaceLab’s numerous projects and campaigns.',
-      'Worked with team to overhaul the SpaceLab official website.',
-      'Collaborated with UX designers and other cross-functional teams to translate Figma wireframes into pixel-perfect, feature-rich components.'
+      ' Contributed to SpaceLab’s open-source initiatives, working in a collaborative development environment to develop the Exoplanetarium project.',
+      'Played a key role in the complete rework of SpaceLab’s primary website, implementing modern UX/UI principles, ensuring accessibility, and optimizing performance.'
     ],
     technologies: [
       'JavaScript', 

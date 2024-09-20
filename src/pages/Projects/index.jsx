@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { IoArrowBackOutline } from "react-icons/io5";
-import { projects } from '../../global/data'
-import ProjectCell from '../../components/ProjectCell'
+import { projectsData } from '../../global/data'
+import { ProjectCell } from '../../components'
 import './styles.scss'
 
 export default function ProjectsPage() {
@@ -12,7 +12,7 @@ export default function ProjectsPage() {
           <h1>Projects</h1>
         </div>
         <ul className='projects-list'>
-          {projects.map((project, index) => 
+          {projectsData.map((project, index) => 
             <li className='project' key={index}><ProjectCell project={project} /></li>
           )}
         </ul>

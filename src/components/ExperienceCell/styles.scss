@@ -1,19 +1,16 @@
 .experience-cell-comp {
   color: var(--color-on-surface);
   font-weight: var(--font-weight-medium);
-  padding: var(--pad-md);
+  margin-bottom: var(--margin-xl);
+  &:last-child {
+    margin-bottom: 0;
+  }
   z-index: 400;
   border-radius: var(--corner-radius);
   transition: ease-in-out box-shadow 400ms, background-color 400ms, transform 400ms;
 
   &.col {
     @media (min-width: 1200px) { flex-direction: row; }
-  }
-  
-  &:hover {
-    cursor: pointer;
-    box-shadow: var(--box-shadow);
-    transform: translateX(3px);
   }
   
   .date { min-width: 200px; }

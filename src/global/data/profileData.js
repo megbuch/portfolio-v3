@@ -1,6 +1,6 @@
 import headshotImage from '../../assets/headshot.jpg'
 
-export const profile = {
+export const profileData = {
   avatar: headshotImage,
   name: "Meghan Bucher",
   role: "Software Engineer",
