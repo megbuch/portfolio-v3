@@ -21,7 +21,7 @@
   --color-secondary-alt: #3169e4;
   --color-on-secondary: #FFFFFF;
 
-  --color-neutral: #555555;
+  --color-neutral: #474747;
   --color-neutral-light: #BDBDBD;
   --color-on-neutral: #212121;
 
@@ -136,8 +136,6 @@ a {
 }
 
 .subtitle-sm {
-  letter-spacing: 1px;
-  font-weight: var(--font-weight-bolder);
   font-size: var(--font-size-body-sm);
   color: var(--color-neutral);
 }
@@ -168,4 +166,23 @@ a {
     padding: var(--pad-xs) var(--pad-sm);
     border-radius: var(--corner-radius);
   }
+}
+
+.projects-list {
+  margin: var(--margin-md) 0;
+  column-count: 1;
+  column-gap: var(--pad-lg);
+
+  @media (min-width: 600px) { column-count: 2; }
+
+  .project {
+    break-inside: avoid;
+    margin-bottom: var(--margin-lg);
+  }
+}
+
+.back-icon { 
+  font-size: var(--font-size-title);
+  transform: translateY(8px);
+  margin-right: var(--margin-lg);
 }

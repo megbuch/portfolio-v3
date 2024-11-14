@@ -4,8 +4,21 @@
   border-radius: var(--corner-radius);
   box-shadow: var(--box-shadow);
 
-  .name {
+  .header {
     font-size: var(--font-size-subtitle);
+  }
+
+  .info-container {
+    justify-content: space-between;
+    gap: var(--pad-sm);
+
+    .subtitle {
+      background-color: var(--color-secondary);
+      color: var(--color-on-primary);
+      font-size: var(--font-size-body-xs);
+      padding: var(--pad-xs) var(--pad-sm);
+      border-radius: var(--corner-radius);
+    }
   }
 
   img {

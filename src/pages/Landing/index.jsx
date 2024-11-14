@@ -5,12 +5,12 @@ import {
   experienceData, 
   educationData,
   certificationData,
-  featuredProjectsData 
+  projectsData,
 } from '../../global/data'
 import { 
   ExperienceCell, 
   EducationCell, 
-  FeaturedProjectCell 
+  ProjectCell 
 } from '../../components'
 import resume from '../../assets/resume.pdf'
 import './styles.scss'
@@ -69,11 +69,16 @@ export default function LandingPage() {
       <div className='section col'>
         <p className='subtitle'>Featured Projects</p>
         <Link to='/projects'>View More</Link>
-        <div className='projects-container col'>
+        {/* <div className='projects-container col'>
           {featuredProjectsData.map((project, index) => (
             <FeaturedProjectCell key={index} project={project} />
           ))}
-        </div>
+        </div> */}
+        <ul className='projects-list'>
+          {projectsData.filter(p => p.isFeatured).map((project, index) => 
+            <li className='project' key={index}><ProjectCell project={project} /></li>
+          )}
+        </ul>
       </div>
     </div>
 	)

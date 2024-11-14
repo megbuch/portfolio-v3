@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom'
 import { IoArrowBackOutline } from "react-icons/io5";
 import { projectsData } from '../../global/data'
 import { ProjectCell } from '../../components'
-import './styles.scss'
 
 export default function ProjectsPage() {
     return (
