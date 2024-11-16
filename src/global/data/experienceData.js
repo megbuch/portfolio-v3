@@ -13,7 +13,7 @@ export const experienceData = [
       'Provide thorough code reviews, conduct thorough testing, and ensure all development adheres to established best practices.'
     ],
     technologies: [
-      'JavaScript', 
+      'Javascript', 
       'React', 
       'Electron', 
       'Node.js', 
@@ -38,7 +38,7 @@ export const experienceData = [
       'Played a key role in the complete rework of SpaceLab’s primary website, implementing modern UX/UI principles, ensuring accessibility, and optimizing performance.'
     ],
     technologies: [
-      'JavaScript', 
+      'Javascript', 
       'React', 
       'Node.js', 
       'HTML', 
@@ -57,7 +57,7 @@ export const experienceData = [
       'Developed full stack applications adhering to best practices using modern web technologies.'
     ], 
     technologies: [
-      'JavaScript', 
+      'Javascript', 
       'React', 
       'Node.js', 
       'Express', 
