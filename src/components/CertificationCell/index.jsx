@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { FaLink } from 'react-icons/fa'
 
 export default function CertificationCell(props) {
   const { certification: c } = props
@@ -7,7 +8,7 @@ export default function CertificationCell(props) {
     <div className='certification-cell-comp col'>
       <h4 className='name'>{c.name}</h4>
       <p>{c.issuer}</p>
-      {c.link && <Link to={c.link} target='_blank'>{c.link.split('/')[2]} ↗</Link>}
+      {c.link && <Link to={c.link} target='_blank'>{c.link.split('/')[2]} <span className='link-icon'><FaLink /></span></Link>}
     </div>
   )
 }

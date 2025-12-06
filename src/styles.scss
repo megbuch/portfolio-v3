@@ -54,6 +54,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-variant-emoji: normal;
 }
 
 ::-webkit-scrollbar {
@@ -164,4 +165,8 @@ select, input[type='text'] {
     break-inside: avoid;
     margin-bottom: var(--pad-lg);
   }
+}
+
+.link-icon {
+  font-size: var(--font-size-sm);
 }
