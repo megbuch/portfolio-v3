@@ -10,16 +10,14 @@
   },
   "certificates": [
     {
-      "name": "Certified Scrum Master",
-      "issuer": "Scrum Alliance"
-    },
-    {
       "name": "AWS Certified Cloud Practitioner",
-      "issuer": "Amazon Web Services"
+      "issuer": "Amazon Web Services",
+      "link": "https://credly.com/badges/3d81120b-d7f2-4fe3-8ff2-3f1ab577e98b"
     },
     {
       "name": "ITILv4 IT Service Management",
-      "issuer": "PeopleCert"
+      "issuer": "PeopleCert",
+      "link": ""
     }
   ],
   "education": [
@@ -93,64 +91,85 @@
   ],
   "projects": [
     {
+      "name": "PostgreSQL Database Analysis",
+      "description": "Data analysis through custom SQL implementations on a PostgreSQL database.",
+      "platform": "Web",
+      "image": "",
+      "technologies": ["PostgreSQL", "SQL"],
+      "isFeatured": false,
+      "link": "https://github.com/megbuch/dvd-database-analysis"
+    },
+    {
+      "name": "World Map",
+      "description": "Interactive map fetches data from the World Bank API.",
+      "platform": "Web",
+      "image": "interactive-world-map.png",
+      "technologies": ["Javascript", "Angular", "TypeScript", "HTML", "SCSS"],
+      "isFeatured": false,
+      "link": "https://github.com/megbuch/interactive-world-map"
+    },
+    {
+      "name": "TripTracer",
+      "description": "Organize vacation itineraries with excursions, share trip details, and set notifications for upcoming activities.",
+      "platform": "Android",
+      "image": "",
+      "technologies": ["Java"],
+      "isFeatured": false,
+      "link": "https://github.com/megbuch/trip-tracer-android"
+    },
+    {
+      "name": "Travel Taniti",
+      "description": "Travel platform where users can book hotels, activities, and dining, while administrators manage all services through an integrated CMS with Unsplash API integration.",
+      "platform": "Web",
+      "image": "travel-taniti.png",
+      "technologies": ["Javascript", "React", "HTML", "SCSS", "Node", "Express", "PostgreSQL"],
+      "isFeatured": true,
+      "link": "https://github.com/megbuch/travel-taniti"
+    },
+    {
       "name": "Exploria",
-      "description": "Discover your next great adventure with Exploria. Powered by the National Park Service API, Exploria delivers real-time, detailed information on all 400+ U.S. National Parks.",
+      "description": "Explore all 400+ U.S. National Parks with up-to-date, detailed information powered by the National Park Service API.",      
       "platform": "Web",
       "image": "exploria.png",
       "technologies": ["Javascript", "React", "HTML", "SCSS"],
       "isFeatured": true,
-      "isWorkProject": false,
-      "company": "",
-      "deployedLink": "https://exploria-mb.netlify.app",
-      "githubLink": "https://github.com/megbuch/exploria"
+      "link": "https://github.com/megbuch/exploria"
     },
     {
       "name": "GitFunded",
-      "description": "Discover and support charitable causes with GitFunded. Create, customize, and manage your campaigns. Make donations to the ones that inspire you. All in a few simple steps.",
+      "description": "Create, manage, and donate to charitable campaigns.",
       "platform": "Web",
       "image": "gitfunded.png",
       "technologies": ["Python", "Django", "HTML", "CSS"],
       "isFeatured": false,
-      "isWorkProject": false,
-      "company": "",
-      "deployedLink": "",
-      "githubLink": "https://github.com/megbuch/GitFunded"
+      "link": "https://github.com/megbuch/GitFunded"
     },
     {
       "name": "JobSeekr",
-      "description": "JobSeekr is the best way to organize all aspects of your job search. Ditch the spreadsheet and manage your job applications with descriptions, company and role information, status updates, dates, notes, and tasks while navigating a beautiful interface.",
+      "description": "Organize job applications your job applications, track statuses, manage tasks, and keep track of company and role information.",      
       "platform": "Web",
       "image": "jobseekr.png",
       "technologies": ["Javascript", "Express", "Node.js", "HTML", "CSS"],
       "isFeatured": false,
-      "isWorkProject": false,
-      "company": "",
-      "deployedLink": "",
-      "githubLink": "https://github.com/megbuch/job-seekr-app"
+      "link": "https://github.com/megbuch/job-seekr-app"
     },
     {
       "name": "Ledgerly Accounting",
-      "description": "Ledgerly Accounting provides small-business owners with a comprehensive solution to manage business income and expenses. Users can manage their income and expense data, filter these transactions by category and/or date range, and generate financial reports.",
+      "description": "Track income and expenses, filter transactions by category and date, and generate financial reports.",
       "platform": "Web",
       "image": "ledgerly.png",
       "technologies": ["Javascript", "HTML", "CSS", "React", "Node.js", "Express", "MongoDB"],
       "isFeatured": false,
-      "isWorkProject": false,
-      "company": "",
-      "deployedLink": "",
-      "githubLink": "https://github.com/megbuch/ledgerly"
+      "link": "https://github.com/megbuch/ledgerly"
     },
     {
       "name": "NPC Generator",
-      "description": "Let NPC Generator inspire you. Create characters on the fly, generating randomized demographic information, appearance descriptions, ability scores, personality traits, plot hooks, alignments, and corresponding beliefs — all at the push of a button.",
+      "description": "Create characters on the fly, generating randomized demographic information, appearance descriptions, ability scores, personality traits, plot hooks, alignments, and corresponding beliefs.",
       "platform": "Web",
       "image": "npcgen.png",
       "technologies": ["Javascript", "HTML", "CSS"],
       "isFeatured": true,
-      "isWorkProject": false,
-      "company": "",
-      "deployedLink": "https://npcgen-mb.netlify.app",
-      "githubLink": "https://github.com/megbuch/npc-generator"
+      "link": "https://github.com/megbuch/npc-generator"
     },
     {
       "name": "Portfolio v1",
@@ -159,10 +178,7 @@
       "image": "portfolio-v1.png",
       "technologies": ["Javascript", "HTML", "CSS"],
       "isFeatured": false,
-      "isWorkProject": false,
-      "company": "",
-      "deployedLink": "https://meghanbucher-v1.netlify.app/",
-      "githubLink": "https://github.com/megbuch/portfolio-v1"
+      "link": "https://github.com/megbuch/portfolio-v1"
     },
     {
       "name": "Portfolio v2",
@@ -171,10 +187,7 @@
       "image": "portfolio-v2.png",
       "technologies": ["Javascript", "React", "HTML", "SCSS"],
       "isFeatured": true,
-      "isWorkProject": false,
-      "company": "",
-      "deployedLink": "https://meghanbucher-v2.netlify.app/",
-      "githubLink": "https://github.com/megbuch/portfolio-v2"
+      "link": "https://github.com/megbuch/portfolio-v2"
     },
     {
       "name": "Portfolio v3",
@@ -183,22 +196,7 @@
       "image": "portfolio-v3.png",
       "technologies": ["Javascript", "React", "HTML", "SCSS"],
       "isFeatured": false,
-      "isWorkProject": false,
-      "company": "",
-      "deployedLink": "https://meghanbucher-v3.netlify.app/",
-      "githubLink": "https://github.com/megbuch/portfolio-v3"
-    },
-    {
-      "name": "Simon Says",
-      "description": "My take on the classic Simon game we all know and love! Reach level 12 and brag to your friends.",
-      "platform": "Web",
-      "image": "simon-says.png",
-      "technologies": ["Javascript", "HTML", "CSS"],
-      "isFeatured": false,
-      "isWorkProject": false,
-      "company": "",
-      "deployedLink": "https://simonsays-mb.netlify.app/",
-      "githubLink": "https://github.com/megbuch/simon-says-game"
+      "link": "https://github.com/megbuch/portfolio-v3"
     },
     {
       "name": "Main Website",
@@ -207,22 +205,7 @@
       "image": "spacelab-main.png",
       "technologies": ["Javascript", "React", "HTML", "SCSS"],
       "isFeatured": false,
-      "isWorkProject": true,
-      "company": "SpaceLab",
-      "deployedLink": "https://spacelab.space/",
-      "githubLink": "https://github.com/spacelabdev/spacelab-react"
-    },
-    {
-      "name": "Participation Campaign",
-      "description": "Landing page for SpaceLab's participation campaign.",
-      "platform": "Web",
-      "image": "spacelab-participation.png",
-      "technologies": ["Javascript", "React", "HTML", "SCSS"],
-      "isFeatured": false,
-      "isWorkProject": true,
-      "company": "SpaceLab",
-      "deployedLink": "",
-      "githubLink": "https://github.com/spacelabdev/spacelab-react"
+      "link": "https://github.com/spacelabdev/spacelab-react"
     },
     {
       "name": "MTI Managed Access",
@@ -231,10 +214,7 @@
       "image": "managed-access-ios.png",
       "technologies": ["Swift"],
       "isFeatured": true,
-      "isWorkProject": true,
-      "company": "Mobile Technologies, Inc.",
-      "deployedLink": "https://apps.apple.com/us/app/mti-managed-access/id6736996883",
-      "githubLink": ""
+      "link": "https://apps.apple.com/us/app/mti-managed-access/id6736996883"
     },
     {
       "name": "MTI Managed Access",
@@ -243,10 +223,16 @@
       "image": "managed-access-android.png",
       "technologies": ["Java"],
       "isFeatured": true,
-      "isWorkProject": true,
-      "company": "Mobile Technologies, Inc.",
-      "deployedLink": "https://play.google.com/store/apps/details?id=com.mti.mae.gen3",
-      "githubLink": ""
+      "link": "https://play.google.com/store/apps/details?id=com.mti.mae.gen3"
+    },
+    {
+      "name": "Simon Says",
+      "description": "The classic Simon game we all know and love.",
+      "platform": "Web",
+      "image": "simon-says.png",
+      "technologies": ["Javascript", "HTML", "CSS"],
+      "isFeatured": false,
+      "link": "https://github.com/megbuch/simon-says-game"
     }
   ]
 }

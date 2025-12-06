@@ -13,7 +13,7 @@ export default function ExperienceCell(props) {
         </div>
         {e.previousTitles.length > 0 && <p className='caption'>{`Previous: ${e.previousTitles.join(', ')}`}</p>}
       </div>
-      <ul className='col'>
+      <ul className='col list'>
         {e.duties.map((duty, index) => (
           <li key={index}>{duty}</li>
         ))}

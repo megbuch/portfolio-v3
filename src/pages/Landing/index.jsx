@@ -1,13 +1,13 @@
-import data from '../../data.json'
 import { ExperienceCell, EducationCell, ProjectCell, CertificationCell, SocialLinks } from '../../components'
-import './styles.scss'
 import headshot from '/assets/headshot.jpg'
+import data from '../../data.json'
+import './styles.scss'
 
 export default function LandingPage() {
 
 	return (
     <div className='col landing-page page-container'>
-      <div id='profile' className='section row profile '>
+      <div className='section row profile'>
         <div className='image-container'>
           <img src={headshot} />
         </div>
@@ -16,12 +16,12 @@ export default function LandingPage() {
           <p>Front End Engineer</p>
         </div>
       </div>
-      <div id='about' className='section col'>
+      <div id='about' className='section col about'>
         <h2>About</h2>
         <p className='bio'>{data.profile.bio}</p>
         <SocialLinks />
       </div>
-      <div id='experience' className='section col'>
+      <div className='section col'>
         <h2>Work Experience</h2>
         <div className='col list'>
           {data.experience.map((experience, index) => (
@@ -29,8 +29,8 @@ export default function LandingPage() {
           ))}
         </div>
       </div>
-      <div id='education' className='section col'>
-        <div className='education'>
+      <div className='section col education'>
+        <div className='schools-subsection col'>
           <h2>Education</h2>
           <div className='list'>
             {data.education.map((education, index) => (
@@ -38,7 +38,7 @@ export default function LandingPage() {
             ))}
           </div>
         </div>
-        <div className='certifications'>
+        <div className='certifications-subsection col'>
           <h2>Certifications</h2>
           <div className='list'>
             {data.certificates.map((certification, index) => (
@@ -47,7 +47,7 @@ export default function LandingPage() {
           </div>
         </div>
       </div>
-      <div id='projects' className='section col'>
+      <div className='section col featured-projects'>
         <h2>Featured Projects</h2>
         <ul className='projects-list'>
           {data.projects.filter(p => p.isFeatured).map((project, index) => 
