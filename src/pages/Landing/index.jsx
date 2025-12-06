@@ -1,44 +1,44 @@
-import { Link } from 'react-router-dom'
 import data from '../../data.json'
-import { 
-  ExperienceCell, 
-  EducationCell, 
-  ProjectCell,
-  Navigation,
-} from '../../components'
-import resume from '/assets/resume.pdf'
-import CertificationCell from '../../components/CertificationCell';
+import { ExperienceCell, EducationCell, ProjectCell, CertificationCell, SocialLinks } from '../../components'
 import './styles.scss'
+import headshot from '/assets/headshot.jpg'
 
 export default function LandingPage() {
+
 	return (
-    <>
-      <Navigation />
-      <div className='col landing-page page-container'>
-        {/* About */}
-        <div id='home' className='section header col'>
+    <div className='col landing-page page-container'>
+      <div id='profile' className='section row profile '>
+        <div className='image-container'>
+          <img src={headshot} />
+        </div>
+        <div>
           <h1>Meghan Bucher</h1>
-          <p className='role'>Front End Engineer</p>
-          <p className='bio'>{data.profile.bio}</p>
+          <p>Front End Engineer</p>
         </div>
-        {/* Experience */}
-        <div id='experience' className='section col'>
-          <h2>Experience</h2>
-          <Link to={resume} target="_blank" rel="noopener noreferrer">View Resume</Link>
-          <div className='col list'>
-            {data.experience.map((experience, index) => (
-              <ExperienceCell key={index} experience={experience} />
-            ))}
-          </div>
+      </div>
+      <div id='about' className='section col'>
+        <h2>About</h2>
+        <p className='bio'>{data.profile.bio}</p>
+        <SocialLinks />
+      </div>
+      <div id='experience' className='section col'>
+        <h2>Work Experience</h2>
+        <div className='col list'>
+          {data.experience.map((experience, index) => (
+            <ExperienceCell key={index} experience={experience} />
+          ))}
         </div>
-        {/* Education/Certs */}
-        <div id='education' className='section col'>
+      </div>
+      <div id='education' className='section col'>
+        <div className='education'>
           <h2>Education</h2>
           <div className='list'>
             {data.education.map((education, index) => (
               <EducationCell key={index} education={education} />
             ))}
           </div>
+        </div>
+        <div className='certifications'>
           <h2>Certifications</h2>
           <div className='list'>
             {data.certificates.map((certification, index) => (
@@ -46,17 +46,15 @@ export default function LandingPage() {
             ))}
           </div>
         </div>
-        {/* Projects */}
-        <div id='projects' className='section col'>
-          <h2>Featured Projects</h2>
-          <Link to='/projects'>View More</Link>
-          <ul className='projects-list'>
-            {data.projects.filter(p => p.isFeatured).map((project, index) => 
-              <li className='project' key={index}><ProjectCell project={project} /></li>
-            )}
-          </ul>
-        </div>
       </div>
-    </>
+      <div id='projects' className='section col'>
+        <h2>Featured Projects</h2>
+        <ul className='projects-list'>
+          {data.projects.filter(p => p.isFeatured).map((project, index) => 
+            <li className='project' key={index}><ProjectCell project={project} /></li>
+          )}
+        </ul>
+      </div>
+    </div>
 	)
 }

@@ -1,36 +1,7 @@
 .experience-cell-comp {
-  font-weight: var(--font-weight-medium);
-  margin-bottom: var(--margin-xl);
+  gap: var(--pad-sm);
 
-  &:last-child {
-    margin-bottom: 0;
-  }
-  z-index: 400;
-  border-radius: var(--corner-radius);
-  transition: ease-in-out box-shadow 400ms, background-color 400ms, transform 400ms;
-
-  &.col {
-    @media (min-width: 1200px) { flex-direction: row; }
-  }
-  
-  .date { min-width: 200px; }
-  
-  .content-ctr {
-    gap: var(--pad-sm);
-  
-    ul { gap: var(--pad-sm); }
-
-    .company, .title {
-      letter-spacing: 1px;
-      font-size: var(--font-size-body-lg);
-    }
-    
-    .company { font-weight: var(--font-weight-bolder); }
-    
-    .location {
-      letter-spacing: 1px;
-      font-size: var(--font-size-body-xs);
-      text-transform: uppercase;
-    }
+  .role {
+    justify-content: space-between;
   }
 }

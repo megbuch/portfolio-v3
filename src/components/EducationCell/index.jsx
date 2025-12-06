@@ -4,11 +4,12 @@ export default function EducationCell(props) {
   const { education: e } = props
 
   return (
-    <div className='education-cell-comp'>
-      <p className='degree'>{e.degree}</p>
-      <p>{e.school}</p>
+    <div className='education-cell-comp row'>
+      <div className='col'>
+        <h4>{e.degree}</h4>
+        <p>{e.school}</p>
+      </div>
       <p>{e.graduationDate}</p>
-      {e?.notes && <p>{e.notes}</p>}
     </div>
   )
 }

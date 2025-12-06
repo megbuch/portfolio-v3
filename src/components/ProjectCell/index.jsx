@@ -12,15 +12,9 @@ export default function ProjectCell(props) {
 
   return (
     <div className='project-cell-comp col'>
-      <p className='header'>{`${p.name} - ${p.platform}`}</p>
+      <h4>{`${p.name} - ${p.platform}`}</h4>
       <div className='info-container row'>
-        <p>
-          {p.technologies.sort().map((technology, index) => (
-            <span key={index}>
-              {technology}{index < p.technologies.length - 1 ? ', ' : ''}
-            </span>
-          ))}
-        </p>
+        <p>{p.technologies.sort().join(', ')}</p>
         <p>{p.isWorkProject ? 'Work' : 'Personal'}</p>
       </div>
       <p>{p.description}</p>

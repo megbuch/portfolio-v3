@@ -1,0 +1,16 @@
+button {
+  background: var(--color-neutral-light);
+  color: var(--color-on-primary);
+  border: none;
+  padding: var(--pad-sm) var(--pad-md);
+  border-radius: var(--corner-radius);
+  font-family: 'Mulish', 'Inter', 'Helvetica Neue', 'Noto Sans', Arial, sans-serif;
+  font-size: var(--font-size-body);
+  
+  &:hover {
+    cursor: pointer;
+    background: var(--color-neutral);
+    transform: translateY(1px);
+    transition: transform 200ms ease-in-out, background 400ms ease-in-out;
+  }
+}

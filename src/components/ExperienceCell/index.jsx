@@ -5,27 +5,23 @@ export default function ExperienceCell(props) {
 
   return (
     <div className='experience-cell-comp col'>
-      <div className='col content-ctr'>
-        <div>
-          <p className='company'>{e.company}</p>
-          {e?.roles?.map(r => (
-            <>
-              <p className='title'>{r.title}</p>
-              <p className='date'>{r.date}</p>
-            </>
-          ))}
+      <div className='col'>
+        <h3>{e.company}</h3>
+        <div className='role row'>
+          <h4 className='title'>{e.title}</h4>
+          <p className='date'>{e.date}</p>
         </div>
-        <p>{e.location}</p>
-        <ul className='col'>
-          {e.duties.map((duty, index) => (
-            <li key={index}>{duty}</li>
-          ))}
-        </ul>
-        <div className='technologies row'>
-          {e.technologies.sort().map((technology, index) => (
-            <div key={index}>{technology}</div>
-          ))}
-        </div>
+        {e.previousTitles.length > 0 && <p className='caption'>{`Previous: ${e.previousTitles.join(', ')}`}</p>}
+      </div>
+      <ul className='col'>
+        {e.duties.map((duty, index) => (
+          <li key={index}>{duty}</li>
+        ))}
+      </ul>
+      <div className='technologies row'>
+        {e.technologies.sort().map((technology, index) => (
+          <div key={index}>{technology}</div>
+        ))}
       </div>
     </div>
   )

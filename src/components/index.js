@@ -5,6 +5,7 @@ import Footer from './Footer'
 import ProjectCell from './ProjectCell'
 import SocialLinks from './SocialLinks'
 import Navigation from './Navigation'
+import Button from './Button'
 
 export {
   CertificationCell,
@@ -13,5 +14,6 @@ export {
   Footer,
   ProjectCell,
   SocialLinks,
-  Navigation
+  Navigation,
+  Button
 }

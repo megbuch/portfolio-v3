@@ -3,7 +3,7 @@
     "name": "Meghan Bucher",
     "role": "Software Engineer",
     "company": "MTI - Mobile Technologies, Inc.",
-    "bio": "I'm a highly-meticulous and versatile software engineer currently focused on advancing web and mobile application development at MTI - Mobile Technologies, Inc. My current role involves designing and developing enterprise-grade software solutions for access management, serving Fortune 100 clients in retail, healthcare, technology, and other sectors. Thriving in the front end, my passion and expertise lies in delivering meaningful and delightful experiences to the end user.",
+    "bio": "I'm a highly-meticulous and versatile software engineer currently focused on advancing web and mobile application development at MTI - Mobile Technologies, Inc. Thriving in the front end, my expertise lies in creating delightful experiences for the end user.",
     "email": "hiremeghanbucher@gmail.com",
     "linkedIn": "https://linkedin.com/in/meghanbucher",
     "github": "https://github.com/megbuch"
@@ -11,41 +11,32 @@
   "certificates": [
     {
       "name": "Certified Scrum Master",
-      "issuer": "Scrum Alliance",
-      "issueDate": "March 2023",
-      "expirationDate": "March 2025",
-      "link": ""
+      "issuer": "Scrum Alliance"
     },
     {
       "name": "AWS Certified Cloud Practitioner",
-      "issuer": "Amazon Web Services",
-      "issueDate": "",
-      "expirationDate": "",
-      "link": ""
+      "issuer": "Amazon Web Services"
     },
     {
       "name": "ITILv4 IT Service Management",
-      "issuer": "PeopleCert",
-      "issueDate": "",
-      "expirationDate": "",
-      "link": ""
+      "issuer": "PeopleCert"
     }
   ],
   "education": [
     {
       "degree": "B.S. in Software Engineering",
       "school": "Western Governors University",
-      "graduationDate": "Graduated October 2025"
+      "graduationDate": "Oct. 2025"
     },
     {
       "degree": "Software Engineering Immersive",
       "school": "General Assembly",
-      "graduationDate": "Completed March 2023"
+      "graduationDate": "Mar. 2023"
     },
     {
       "degree": "A.S. in Business Administration",
       "school": "De Anza College",
-      "graduationDate": "Graduated June 2020"
+      "graduationDate": "Jun. 2020"
     }
   ],
   "experience": [
@@ -53,16 +44,9 @@
       "company": "MTI - Mobile Technologies, Inc.",
       "location": "Hillsboro, Oregon",
       "website": "https://mtigs.com/",
-      "roles": [
-        {
-          "date": "May 2025 - Present",
-          "title": "Full Stack Engineer"
-        },
-        {
-          "date": "May 2023 - May 2025",
-          "title": "Front End Engineer"
-        }
-      ],
+      "title": "Full Stack Engineer",
+      "previousTitles": ["Front End Engineer"],
+      "date": "May 2023 - Present",
       "duties": [
         "Design and develop large-scale, enterprise-grade access management web and mobile applications, ensuring robust, performant, and highly-secure solutions used by a broad array of Fortune 100 clients in retail, healthcare, technology, and other industries.",
         "Rebuilt the enterprise front end (React) application from the ground up, delivering the third-generation platform with enhanced performance, scalability, and user experience.",
@@ -88,15 +72,11 @@
     },
     {
       "company": "SpaceLab",
-      "title": "Software Engineering Intern",
       "location": "Remote",
       "website": "https://spacelab.space/",
-      "roles": [
-        {
-          "date": "Mar 2023 - May 2023",
-          "title": "Web Developer"
-        }
-      ],
+      "title": "Web Developer",
+      "previousTitles": [],
+      "date": "Mar. 2023 - May 2023",
       "duties": [
         "Contributed to SpaceLab's open-source initiatives, working in a collaborative development environment to develop the Exoplanetarium project.",
         "Played a key role in the complete rework of SpaceLab's primary website, implementing modern UX/UI principles, ensuring accessibility, and optimizing performance."

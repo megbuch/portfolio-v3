@@ -26,10 +26,7 @@ export default function ProjectsPage() {
   return (
     <div id='projects-page' className='col page-container'>
       <div className='row header'>
-        <div className='row'>
-          <Link to='/' className='back-icon'><IoArrowBackOutline /></Link>
-          <h2>Projects</h2>
-        </div>
+        <h1>Projects</h1>
         <select ref={filterRef} onChange={filter}>
           <option default value='all'>All</option>
           <option value='work'>Work</option>

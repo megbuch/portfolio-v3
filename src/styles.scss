@@ -7,9 +7,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  // pantone color of the year 2026: cloud dancer
   --color-background: #F0EEE9;
-  --color-on-background: #000000;
+  --color-on-background: #1d1d1d;
+  --color-on-background-dark: #000000;
 
   --color-surface: #fdfdfd;
   --color-on-surface: #000;
@@ -18,27 +18,22 @@
   --color-primary-hover: #4da1d4;
   --color-on-primary: #FFFFFF;
 
-  --color-neutral: #474747;
-  --color-neutral-light: #BDBDBD;
+  --color-neutral: #5e5d5d;
+  --color-neutral-light: #929292;
   --color-on-neutral: #212121;
 
   --color-shadow: rgba(18, 18, 18, 0.205);
   
-  --font-weight-lightest: 200;
   --font-weight-light: 300;
-  --font-weight-medium: 400;
+  --font-weight-reg: 400;
   --font-weight-bold: 500;
-  --font-weight-bolder: 600;
-  --font-weight-boldest: 700;
 
-  --font-size-title-lg: 56px;
-  --font-size-title-md: 48px;
-  --font-size-title-sm: 36px;
-  --font-size-subtitle: 28px;
-  --font-size-body-lg: 20px;
-  --font-size-body-md: 14px;
-  --font-size-body-sm: 12px;
-  --font-size-body-xs: 10px;
+  --font-size-h1: 24px;
+  --font-size-h2: 18px;
+  --font-size-h3: 16px;
+  --font-size-body: 14px;
+  --font-size-sm: 12px;
+
   --icon-size: 26px;
 
   --pad-xs: 3px;
@@ -47,12 +42,6 @@
   --pad-lg: 24px;
   --pad-xl: 36px;
   --pad-xxl: 80px;
-
-  --margin-xs: 4px;
-  --margin-sm: 8px;
-  --margin-md: 16px;
-  --margin-lg: 24px;
-  --margin-xl: 36px;
 
   --corner-radius: 4px;
 
@@ -74,8 +63,7 @@
 
 body {
   font-family: 'Mulish', 'Inter', 'Helvetica Neue', 'Noto Sans', Arial, sans-serif;
-  font-size: var(--font-size-body-md);
-  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-body);
   line-height: 1.6;
   color: var(--color-on-background);
   background: var(--color-background);
@@ -83,25 +71,32 @@ body {
   justify-content: center;
 }
 
+h1 {
+  font-size: var(--font-size-h1);
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+}
+
+h3 {
+  font-size: var(--font-size-h3);
+}
+
+.caption {
+  font-size: var(--font-size-sm);
+  font-style: italic;
+  color: var(--color-neutral);
+}
+
 .page-container {
-  border-radius: var(--corner-radius);
   width: 100vw;
+  margin: 0 auto;
+  padding: var(--pad-xxl) var(--pad-md) var(--pad-md);
 
   @media (min-width: 600px) { width: 90vw; }
   @media (min-width: 1200px) { width: 70vw; }
   @media (min-width: 1600px) { width: 50vw; }
-}
-
-h1 {
-  font-size: var(--font-size-title-lg);
-  font-weight: var(--font-weight-medium);
-  letter-spacing: -3px;
-}
-
-h2 {
-  font-size: var(--font-size-title-md);
-  font-weight: var(--font-weight-light);
-  letter-spacing: 1px;
 }
 
 ul {
@@ -140,20 +135,20 @@ select {
 
 .technologies {
   flex-wrap: wrap;
-  margin: var(--margin-sm) 0;
+  margin: var(--pad-sm) 0;
   gap: var(--pad-sm);
+  font-size: var(--font-size-sm);
   
   div {
     background-color: var(--color-primary);
     color: var(--color-on-primary);
-    font-size: var(--font-size-body-sm);
     padding: var(--pad-xs) var(--pad-sm);
     border-radius: var(--corner-radius);
   }
 }
 
 .projects-list {
-  margin: var(--margin-md) 0;
+  margin: var(--pad-md) 0;
   column-count: 1;
   column-gap: var(--pad-lg);
 
@@ -161,12 +156,6 @@ select {
 
   .project {
     break-inside: avoid;
-    margin-bottom: var(--margin-lg);
+    margin-bottom: var(--pad-lg);
   }
-}
-
-.back-icon { 
-  font-size: var(--font-size-title);
-  transform: translateY(8px);
-  margin-right: var(--margin-lg);
 }

@@ -1,5 +1,4 @@
 .education-cell-comp {
-  margin-bottom: var(--margin-sm);
-  &:last-child { margin-bottom: 0; }
-  .degree { font-weight: var(--font-weight-boldest); }
+  justify-content: space-between;
+  margin-bottom: var(--pad-sm);
 }
