@@ -7,7 +7,7 @@ export default function CertificationCell(props) {
     <div className='certification-cell-comp col'>
       <h4 className='name'>{c.name}</h4>
       <p>{c.issuer}</p>
-      {c.link && <Link to={c.link}>{c.link.split('/')[2]}↗</Link>}
+      {c.link && <Link to={c.link} target='_blank'>{c.link.split('/')[2]} ↗</Link>}
     </div>
   )
 }
