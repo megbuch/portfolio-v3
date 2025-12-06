@@ -4,21 +4,22 @@
   right: 0;
   display: flex;
   justify-content: center;
+  z-index: 600;
   
   .navigation-container {
     position: relative;
-    z-index: 5000;
     margin: var(--pad-md);
     background: var(--color-surface);
     height: var(--navigation-height);
     box-shadow: var(--box-shadow);
+    z-index: 600;
     
     .navigation-items {
+      z-index: 700;
       justify-content: space-evenly;
       align-items: center;
       height: 100%;
       font-size: var(--icon-size);
-      z-index: 5000;
   
       .item {
         color: var(--color-primary);
@@ -45,6 +46,7 @@
       background: var(--color-surface);
       height: var(--navigation-height);
       width: var(--navigation-height);
+      z-index: 500;
   
       &.left {
         left: -25px;
