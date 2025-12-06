@@ -1,20 +1,23 @@
-#landing-page {
-  .header {
-    .links {
-      gap: var(--pad-sm);
-      font-size: var(--font-size-icons);
-      margin-top: var(--margin-md);
-    }
-  }
-  
+.landing-page {
   .section {
-    gap: var(--pad-md);
+    min-height: 100vh;
+    justify-content: center;
+    gap: var(--pad-lg);
     margin-bottom: var(--pad-xxl);
     &:last-child { margin-bottom: 0; }
+
+    .list {
+      justify-content: space-between;
+    }
+
+    .role {
+      font-size: var(--font-size-title-sm);
+    }
 
     .bio {
       font-size: var(--font-size-body-lg);
     }
+
 
     .text-image-container {
       margin-top: var(--pad-md);

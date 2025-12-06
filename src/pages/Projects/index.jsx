@@ -1,24 +1,24 @@
 import { useState, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { IoArrowBackOutline } from "react-icons/io5";
-import { projectsData } from '../../global/data'
 import { ProjectCell } from '../../components'
+import data from '../../data.json'
 import './styles.scss'
 
 export default function ProjectsPage() {
-  const [projects, setProjects] = useState(projectsData)
+  const [projects, setProjects] = useState(data.projects)
   const filterRef = useRef(null)
 
   const filter = () => {
     switch(filterRef.current.value) {
       case 'all': 
-        setProjects(projectsData)
+        setProjects(data.projects)
         break
       case 'work': 
-        setProjects(projectsData.filter(p => p.isWorkProject))
+        setProjects(data.projects.filter(p => p.isWorkProject))
         break
       case 'personal': 
-        setProjects(projectsData.filter(p => !p.isWorkProject))
+        setProjects(data.projects.filter(p => !p.isWorkProject))
         break
     }
   }
@@ -28,7 +28,7 @@ export default function ProjectsPage() {
       <div className='row header'>
         <div className='row'>
           <Link to='/' className='back-icon'><IoArrowBackOutline /></Link>
-          <h1>Projects</h1>
+          <h2>Projects</h2>
         </div>
         <select ref={filterRef} onChange={filter}>
           <option default value='all'>All</option>

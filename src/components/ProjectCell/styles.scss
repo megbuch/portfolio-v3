@@ -3,9 +3,11 @@
   gap: var(--pad-md);
   border-radius: var(--corner-radius);
   box-shadow: var(--box-shadow);
+  background: var(--color-surface);
+  color: var(--color-on-surface);
 
   .header {
-    font-size: var(--font-size-subtitle);
+    font-size: var(--font-size-body-lg);
   }
 
   .info-container {
@@ -13,7 +15,7 @@
     gap: var(--pad-sm);
 
     .subtitle {
-      background-color: var(--color-secondary);
+      background-color: var(--color-primary);
       color: var(--color-on-primary);
       font-size: var(--font-size-body-xs);
       padding: var(--pad-xs) var(--pad-sm);

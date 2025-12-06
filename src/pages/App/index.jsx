@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 import LandingPage from '../Landing'
 import ProjectsPage from '../Projects'
+import { SocialLinks } from '../../components'
 import '../../styles.scss'
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
         <Route path='/' element={<LandingPage />} />
         <Route path='/projects' element={<ProjectsPage />} />
       </Routes>
+      <SocialLinks />
     </>
   )
 }

@@ -3,6 +3,10 @@
 
   .header { justify-content: space-between; }
 
+  .back-icon {
+    font-size: var(--icon-size);
+  }
+
   .projects-list {
     @media (min-width: 600px) { column-count: 2; }
     @media (min-width: 1200px) { column-count: 3; }

@@ -1,0 +1,51 @@
+.navigation-comp {
+  position: fixed;
+  z-index: 5000;
+  margin: var(--margin-md);
+  background: var(--color-surface);
+  height: var(--navigation-height);
+  justify-self: center;
+  box-shadow: var(--box-shadow);
+  
+  .navigation-items {
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    font-size: var(--icon-size);
+    z-index: 5000;
+
+    .item {
+      color: var(--color-primary);
+      display: flex;
+      align-items: center;
+      padding: var(--pad-md);
+      height: 100%;
+      
+      &:hover {
+        cursor: pointer;
+        color: var(--color-primary-hover);
+      }
+
+      &.active {
+        background: var(--color-background);
+        color: var(--color-primary-hover);
+      }
+    }
+  }
+
+  .side {
+    position: absolute;
+    border-radius: 50%;
+    background: var(--color-surface);
+    height: var(--navigation-height);
+    width: var(--navigation-height);
+
+    &.left {
+      left: -25px;
+    }
+
+    &.right {
+      right: -25px;
+    }
+  }
+}

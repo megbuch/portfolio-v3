@@ -1,0 +1,272 @@
+{
+  "profile": {
+    "name": "Meghan Bucher",
+    "role": "Software Engineer",
+    "company": "MTI - Mobile Technologies, Inc.",
+    "bio": "I'm a highly-meticulous and versatile software engineer currently focused on advancing web and mobile application development at MTI - Mobile Technologies, Inc. My current role involves designing and developing enterprise-grade software solutions for access management, serving Fortune 100 clients in retail, healthcare, technology, and other sectors. Thriving in the front end, my passion and expertise lies in delivering meaningful and delightful experiences to the end user.",
+    "email": "hiremeghanbucher@gmail.com",
+    "linkedIn": "https://linkedin.com/in/meghanbucher",
+    "github": "https://github.com/megbuch"
+  },
+  "certificates": [
+    {
+      "name": "Certified Scrum Master",
+      "issuer": "Scrum Alliance",
+      "issueDate": "March 2023",
+      "expirationDate": "March 2025",
+      "link": ""
+    },
+    {
+      "name": "AWS Certified Cloud Practitioner",
+      "issuer": "Amazon Web Services",
+      "issueDate": "",
+      "expirationDate": "",
+      "link": ""
+    },
+    {
+      "name": "ITILv4 IT Service Management",
+      "issuer": "PeopleCert",
+      "issueDate": "",
+      "expirationDate": "",
+      "link": ""
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.S. in Software Engineering",
+      "school": "Western Governors University",
+      "graduationDate": "Graduated October 2025"
+    },
+    {
+      "degree": "Software Engineering Immersive",
+      "school": "General Assembly",
+      "graduationDate": "Completed March 2023"
+    },
+    {
+      "degree": "A.S. in Business Administration",
+      "school": "De Anza College",
+      "graduationDate": "Graduated June 2020"
+    }
+  ],
+  "experience": [
+    {
+      "company": "MTI - Mobile Technologies, Inc.",
+      "location": "Hillsboro, Oregon",
+      "website": "https://mtigs.com/",
+      "roles": [
+        {
+          "date": "May 2025 - Present",
+          "title": "Full Stack Engineer"
+        },
+        {
+          "date": "May 2023 - May 2025",
+          "title": "Front End Engineer"
+        }
+      ],
+      "duties": [
+        "Design and develop large-scale, enterprise-grade access management web and mobile applications, ensuring robust, performant, and highly-secure solutions used by a broad array of Fortune 100 clients in retail, healthcare, technology, and other industries.",
+        "Rebuilt the enterprise front end (React) application from the ground up, delivering the third-generation platform with enhanced performance, scalability, and user experience.",
+        "Led the design and development of our native Android (Java) and iOS (Swift) applications for IoT device access management, enabling in-store employees to securely unlock Bluetooth-enabled smart locks.",
+        "Currently leading the full-cycle development of both Android (Java) and iOS (Swift) SDKs, enabling B2B clients to leverage our proprietary wireless communication technology into their existing mobile applications.",
+        "Provide thorough code reviews, conduct thorough testing, and ensure all development adheres to established best practices."
+      ],
+      "technologies": [
+        "Javascript",
+        "React",
+        "Electron",
+        "Node.js",
+        "Java",
+        "Swift",
+        "Ruby on Rails",
+        "PostgreSQL",
+        "HTML",
+        "CSS & SCSS",
+        "Android Development",
+        "iOS Development",
+        "Web Development"
+      ]
+    },
+    {
+      "company": "SpaceLab",
+      "title": "Software Engineering Intern",
+      "location": "Remote",
+      "website": "https://spacelab.space/",
+      "roles": [
+        {
+          "date": "Mar 2023 - May 2023",
+          "title": "Web Developer"
+        }
+      ],
+      "duties": [
+        "Contributed to SpaceLab's open-source initiatives, working in a collaborative development environment to develop the Exoplanetarium project.",
+        "Played a key role in the complete rework of SpaceLab's primary website, implementing modern UX/UI principles, ensuring accessibility, and optimizing performance."
+      ],
+      "technologies": [
+        "Javascript",
+        "React",
+        "Node.js",
+        "HTML",
+        "CSS & SCSS",
+        "Web Development"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Exploria",
+      "description": "Discover your next great adventure with Exploria. Powered by the National Park Service API, Exploria delivers real-time, detailed information on all 400+ U.S. National Parks.",
+      "platform": "Web",
+      "image": "exploria.png",
+      "technologies": ["Javascript", "React", "HTML", "SCSS"],
+      "isFeatured": true,
+      "isWorkProject": false,
+      "company": "",
+      "deployedLink": "https://exploria-mb.netlify.app",
+      "githubLink": "https://github.com/megbuch/exploria"
+    },
+    {
+      "name": "GitFunded",
+      "description": "Discover and support charitable causes with GitFunded. Create, customize, and manage your campaigns. Make donations to the ones that inspire you. All in a few simple steps.",
+      "platform": "Web",
+      "image": "gitfunded.png",
+      "technologies": ["Python", "Django", "HTML", "CSS"],
+      "isFeatured": false,
+      "isWorkProject": false,
+      "company": "",
+      "deployedLink": "",
+      "githubLink": "https://github.com/megbuch/GitFunded"
+    },
+    {
+      "name": "JobSeekr",
+      "description": "JobSeekr is the best way to organize all aspects of your job search. Ditch the spreadsheet and manage your job applications with descriptions, company and role information, status updates, dates, notes, and tasks while navigating a beautiful interface.",
+      "platform": "Web",
+      "image": "jobseekr.png",
+      "technologies": ["Javascript", "Express", "Node.js", "HTML", "CSS"],
+      "isFeatured": false,
+      "isWorkProject": false,
+      "company": "",
+      "deployedLink": "",
+      "githubLink": "https://github.com/megbuch/job-seekr-app"
+    },
+    {
+      "name": "Ledgerly Accounting",
+      "description": "Ledgerly Accounting provides small-business owners with a comprehensive solution to manage business income and expenses. Users can manage their income and expense data, filter these transactions by category and/or date range, and generate financial reports.",
+      "platform": "Web",
+      "image": "ledgerly.png",
+      "technologies": ["Javascript", "HTML", "CSS", "React", "Node.js", "Express", "MongoDB"],
+      "isFeatured": false,
+      "isWorkProject": false,
+      "company": "",
+      "deployedLink": "",
+      "githubLink": "https://github.com/megbuch/ledgerly"
+    },
+    {
+      "name": "NPC Generator",
+      "description": "Let NPC Generator inspire you. Create characters on the fly, generating randomized demographic information, appearance descriptions, ability scores, personality traits, plot hooks, alignments, and corresponding beliefs — all at the push of a button.",
+      "platform": "Web",
+      "image": "npcgen.png",
+      "technologies": ["Javascript", "HTML", "CSS"],
+      "isFeatured": true,
+      "isWorkProject": false,
+      "company": "",
+      "deployedLink": "https://npcgen-mb.netlify.app",
+      "githubLink": "https://github.com/megbuch/npc-generator"
+    },
+    {
+      "name": "Portfolio v1",
+      "description": "The first iteration of my portfolio.",
+      "platform": "Web",
+      "image": "portfolio-v1.png",
+      "technologies": ["Javascript", "HTML", "CSS"],
+      "isFeatured": false,
+      "isWorkProject": false,
+      "company": "",
+      "deployedLink": "https://meghanbucher-v1.netlify.app/",
+      "githubLink": "https://github.com/megbuch/portfolio-v1"
+    },
+    {
+      "name": "Portfolio v2",
+      "description": "The second iteration of my portfolio.",
+      "platform": "Web",
+      "image": "portfolio-v2.png",
+      "technologies": ["Javascript", "React", "HTML", "SCSS"],
+      "isFeatured": true,
+      "isWorkProject": false,
+      "company": "",
+      "deployedLink": "https://meghanbucher-v2.netlify.app/",
+      "githubLink": "https://github.com/megbuch/portfolio-v2"
+    },
+    {
+      "name": "Portfolio v3",
+      "description": "The third iteration of my portfolio.",
+      "platform": "Web",
+      "image": "portfolio-v3.png",
+      "technologies": ["Javascript", "React", "HTML", "SCSS"],
+      "isFeatured": false,
+      "isWorkProject": false,
+      "company": "",
+      "deployedLink": "https://meghanbucher-v3.netlify.app/",
+      "githubLink": "https://github.com/megbuch/portfolio-v3"
+    },
+    {
+      "name": "Simon Says",
+      "description": "My take on the classic Simon game we all know and love! Reach level 12 and brag to your friends.",
+      "platform": "Web",
+      "image": "simon-says.png",
+      "technologies": ["Javascript", "HTML", "CSS"],
+      "isFeatured": false,
+      "isWorkProject": false,
+      "company": "",
+      "deployedLink": "https://simonsays-mb.netlify.app/",
+      "githubLink": "https://github.com/megbuch/simon-says-game"
+    },
+    {
+      "name": "Main Website",
+      "description": "Complete redesign of the SpaceLab main website.",
+      "platform": "Web",
+      "image": "spacelab-main.png",
+      "technologies": ["Javascript", "React", "HTML", "SCSS"],
+      "isFeatured": false,
+      "isWorkProject": true,
+      "company": "SpaceLab",
+      "deployedLink": "https://spacelab.space/",
+      "githubLink": "https://github.com/spacelabdev/spacelab-react"
+    },
+    {
+      "name": "Participation Campaign",
+      "description": "Landing page for SpaceLab's participation campaign.",
+      "platform": "Web",
+      "image": "spacelab-participation.png",
+      "technologies": ["Javascript", "React", "HTML", "SCSS"],
+      "isFeatured": false,
+      "isWorkProject": true,
+      "company": "SpaceLab",
+      "deployedLink": "",
+      "githubLink": "https://github.com/spacelabdev/spacelab-react"
+    },
+    {
+      "name": "MTI Managed Access",
+      "description": "Native iOS application that allows users to manage MTI Connect enabled security devices, keys, user access, as well as view health, security statuses, and historical data. This app also includes an unlocking feature, allowing users to unlock smart locks via Bluetooth Low Energy.",
+      "platform": "iOS",
+      "image": "managed-access-ios.png",
+      "technologies": ["Swift"],
+      "isFeatured": true,
+      "isWorkProject": true,
+      "company": "Mobile Technologies, Inc.",
+      "deployedLink": "https://apps.apple.com/us/app/mti-managed-access/id6736996883",
+      "githubLink": ""
+    },
+    {
+      "name": "MTI Managed Access",
+      "description": "Native Android application that allows users to manage MTI Connect enabled security devices, keys, user access, as well as view health, security statuses, and historical data. This app also includes an unlocking feature, allowing users to unlock smart locks via Bluetooth Low Energy.",
+      "platform": "Android",
+      "image": "managed-access-android.png",
+      "technologies": ["Java"],
+      "isFeatured": true,
+      "isWorkProject": true,
+      "company": "Mobile Technologies, Inc.",
+      "deployedLink": "https://play.google.com/store/apps/details?id=com.mti.mae.gen3",
+      "githubLink": ""
+    }
+  ]
+}

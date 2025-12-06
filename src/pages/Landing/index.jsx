@@ -1,80 +1,62 @@
 import { Link } from 'react-router-dom'
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
-import { 
-  profileData, 
-  experienceData, 
-  educationData,
-  certificationData,
-  projectsData,
-} from '../../global/data'
+import data from '../../data.json'
 import { 
   ExperienceCell, 
   EducationCell, 
-  ProjectCell 
+  ProjectCell,
+  Navigation,
 } from '../../components'
-import resume from '../../assets/resume.pdf'
-import './styles.scss'
+import resume from '/assets/resume.pdf'
 import CertificationCell from '../../components/CertificationCell';
+import './styles.scss'
 
 export default function LandingPage() {
 	return (
-		<div id='landing-page' className='col page-container'>
-      <div className='header col'>
-        <h1>{profileData.name}</h1>
-        <h2>{`${profileData.role} at ${profileData.company}`}</h2>
-        <p>{profileData.contact.email}</p>
-        <div className='links row'>
-          <Link to={profileData.links.linkedIn} target='_blank'><FaLinkedin /></Link>
-          <Link to={profileData.links.gitHub} target='_blank'><FaGithub /></Link>
+    <>
+      <Navigation />
+      <div className='col landing-page page-container'>
+        {/* About */}
+        <div id='home' className='section header col'>
+          <h1>Meghan Bucher</h1>
+          <p className='role'>Front End Engineer</p>
+          <p className='bio'>{data.profile.bio}</p>
         </div>
-      </div>
-      {/* About */}
-      <div className='section col'>
-        <div className='text-image-container col'>
-          <div className='overlay'>
-            <img src={profileData.avatar} />
+        {/* Experience */}
+        <div id='experience' className='section col'>
+          <h2>Experience</h2>
+          <Link to={resume} target="_blank" rel="noopener noreferrer">View Resume</Link>
+          <div className='col list'>
+            {data.experience.map((experience, index) => (
+              <ExperienceCell key={index} experience={experience} />
+            ))}
           </div>
-          <p className='bio'>{profileData.bio}</p>
+        </div>
+        {/* Education/Certs */}
+        <div id='education' className='section col'>
+          <h2>Education</h2>
+          <div className='list'>
+            {data.education.map((education, index) => (
+              <EducationCell key={index} education={education} />
+            ))}
+          </div>
+          <h2>Certifications</h2>
+          <div className='list'>
+            {data.certificates.map((certification, index) => (
+              <CertificationCell key={index} certification={certification} />
+            ))}
+          </div>
+        </div>
+        {/* Projects */}
+        <div id='projects' className='section col'>
+          <h2>Featured Projects</h2>
+          <Link to='/projects'>View More</Link>
+          <ul className='projects-list'>
+            {data.projects.filter(p => p.isFeatured).map((project, index) => 
+              <li className='project' key={index}><ProjectCell project={project} /></li>
+            )}
+          </ul>
         </div>
       </div>
-      {/* Experience */}
-      <div className='section col'>
-        <p className='subtitle'>Experience</p>
-        <Link to={resume} target="_blank" rel="noopener noreferrer">View Resume</Link>
-        <div className='col'>
-          {experienceData.map((experience, index) => (
-            <ExperienceCell key={index} experience={experience} />
-          ))}
-        </div>
-      </div>
-      {/* Education */}
-      <div className='section col'>
-        <p className='subtitle'>Education</p>
-        <div className='col'>
-          {educationData.map((education, index) => (
-            <EducationCell key={index} education={education} />
-          ))}
-        </div>
-      </div>
-      {/* Certifications */}
-      <div className='section col'>
-        <p className='subtitle'>Certifications</p>
-        <div className='col'>
-          {certificationData.map((certification, index) => (
-            <CertificationCell key={index} certification={certification} />
-          ))}
-        </div>
-      </div>
-      {/* Projects */}
-      <div className='section col'>
-        <p className='subtitle'>Featured Projects</p>
-        <Link to='/projects'>View More</Link>
-        <ul className='projects-list'>
-          {projectsData.filter(p => p.isFeatured).map((project, index) => 
-            <li className='project' key={index}><ProjectCell project={project} /></li>
-          )}
-        </ul>
-      </div>
-    </div>
+    </>
 	)
 }
