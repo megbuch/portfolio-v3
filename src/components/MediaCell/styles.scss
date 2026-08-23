@@ -1,0 +1,11 @@
+.media-cell-comp {
+  gap: var(--pad-sm);
+
+  .sources-container {
+    gap: var(--pad-sm);
+
+    .title {
+      font-style: italic;
+    }
+  }
+}

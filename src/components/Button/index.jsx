@@ -1,7 +1,7 @@
 import './styles.scss'
 
-export default function Button({ onClick, text }) {
+export default function Button(props) {
   return (
-    <button onClick={onClick}>{text}</button>
+    <button {...props}>{props.children}</button>
   )
 }

@@ -1,19 +1,9 @@
-import CertificationCell from './CertificationCell'
-import EducationCell from './EducationCell'
-import ExperienceCell from './ExperienceCell'
-import Footer from './Footer'
-import ProjectCell from './ProjectCell'
-import SocialLinks from './SocialLinks'
-import Navigation from './Navigation'
-import Button from './Button'
-
-export {
-  CertificationCell,
-  EducationCell,
-  ExperienceCell,
-  Footer,
-  ProjectCell,
-  SocialLinks,
-  Navigation,
-  Button
-}
+export { default as Button } from './Button'
+export { default as CertificationCell } from './CertificationCell'
+export { default as EducationCell } from './EducationCell'
+export { default as ExperienceCell } from './ExperienceCell'
+export { default as Footer } from './Footer'
+export { default as MediaCell } from './MediaCell'
+export { default as ProjectCell } from './ProjectCell'
+export { default as SocialLinks } from './SocialLinks'
+export { default as Navigation } from './Navigation'

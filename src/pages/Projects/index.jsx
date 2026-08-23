@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useMemo } from 'react'
 import { ProjectCell } from '../../components'
 import data from '../../data.json'
 import './styles.scss'
@@ -6,6 +6,9 @@ import './styles.scss'
 export default function ProjectsPage() {
   const [projects, setProjects] = useState(data.projects)
   const [query, setQuery] = useState('')
+  const sortedProjects = useMemo(() => {
+    return projects.sort((a,b) => a.name.localeCompare(b.name))
+  }, [projects])
 
   useEffect(() => {
     const lowercasedQuery = query.toLowerCase()
@@ -25,7 +28,7 @@ export default function ProjectsPage() {
         </div>
       </div>
       <ul className='projects-list'>
-        {projects.map((project, index) => 
+        {sortedProjects.map((project, index) => 
           <li className='project' key={index}><ProjectCell project={project} /></li>
         )}
       </ul>
