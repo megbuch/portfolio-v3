@@ -42,7 +42,7 @@ export default function LandingPage() {
       <div className='section col education'>
         <div className='schools-subsection col'>
           <h2>Education</h2>
-          <ul className='list'>
+          <ul className='small-list'>
             {data.education.map((education, index) => (
               <li key={index}><EducationCell education={education} /></li>
             ))}
@@ -50,7 +50,7 @@ export default function LandingPage() {
         </div>
         <div className='certifications-subsection col'>
           <h2>Certifications</h2>
-          <ul className='list'>
+          <ul className='small-list'>
             {data.certificates.map((certification, index) => (
               <li key={index}><CertificationCell certification={certification} /></li>
             ))}

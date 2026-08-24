@@ -8,7 +8,7 @@ export default function MediaCell(props) {
   return (
     <div className='media-cell-comp col'>
       <h4>{m.project}</h4>
-      <ul className='sources-container col'>
+      <ul className='small-list col'>
         {m.sources.map((s, index) => (
           <li key={index}>
             <div className='source-content-container row'>

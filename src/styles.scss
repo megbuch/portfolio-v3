@@ -117,8 +117,24 @@ select, input[type='text'] {
   flex-direction: column;
 }
 
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pad-lg);
+}
+
+.small-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pad-sm);
+}
+
 .icon {
   font-size: 38px;
+}
+
+.link-icon {
+  font-size: var(--font-size-sm);
 }
 
 .technologies {
@@ -146,8 +162,4 @@ select, input[type='text'] {
     break-inside: avoid;
     margin-bottom: var(--pad-lg);
   }
-}
-
-.link-icon {
-  font-size: var(--font-size-sm);
 }

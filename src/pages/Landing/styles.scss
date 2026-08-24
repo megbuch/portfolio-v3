@@ -7,15 +7,9 @@
     height: 1px;
     background-color: var(--color-neutral-light);
     margin: var(--pad-xl) 0;
-  }
+}
 
   .section { gap: var(--pad-sm); }
-
-  .list {
-    display: flex;
-    flex-direction: column;
-    gap: var(--pad-lg);
-  }
 
   .profile {
     justify-content: center;

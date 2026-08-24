@@ -1,15 +1,11 @@
 .media-cell-comp {
   gap: var(--pad-sm);
 
-  .sources-container {
-    gap: var(--pad-sm);
+  .source-content-container {
+    justify-content: space-between;
 
-    .source-content-container {
-      justify-content: space-between;
-
-      .title {
-        font-style: italic;
-      }
+    .title {
+      font-style: italic;
     }
   }
 }
