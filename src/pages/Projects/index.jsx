@@ -28,9 +28,9 @@ export default function ProjectsPage() {
     <div id='projects-page' className='col page-container'>
       <div className='col header'>
         <h1>Projects</h1>
-          <div className='col'>
+          <div className='search-container col'>
             <p>Search by name, platform, or technology</p>
-            <div className='row search-container'>
+            <div className='row searchbar-container'>
               <input className='searchbar' type='text' value={query} onChange={e=>setQuery(e.target.value)}/>
               <Button onClick={clearQuery}>Clear</Button>
             </div>

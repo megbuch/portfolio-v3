@@ -8,10 +8,14 @@
     }
 
     .search-container {
-      gap: var(--pad-xs);
+      gap: var(--pad-sm);
 
-      .searchbar {
-        flex-grow: 1;
+      .searchbar-container {
+        gap: var(--pad-sm);
+  
+        .searchbar {
+          flex-grow: 1;
+        }
       }
     }
   }
