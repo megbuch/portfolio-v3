@@ -8,8 +8,6 @@ export default function SocialLinks() {
     <div className='social-links-comp row'>
       <Link className='item' to={data.profile.linkedIn} target='_blank'><FaLinkedin /></Link>
       <Link className='item' to={data.profile.github} target='_blank'><FaGithub /></Link>
-      <div className='side left'></div>
-      <div className='side right'></div>
     </div>
   )
 }

@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo } from 'react'
-import { ProjectCell } from '../../components'
+import { ProjectCell, Button } from '../../components'
 import data from '../../data.json'
 import './styles.scss'
 
@@ -11,21 +11,30 @@ export default function ProjectsPage() {
   }, [projects])
 
   useEffect(() => {
-    const lowercasedQuery = query.toLowerCase()
-    const filtered = data.projects.filter(p => p.name.toLowerCase().includes(lowercasedQuery)
-      || p.platform.toLowerCase().includes(lowercasedQuery)
-      || p.technologies.some(t => t.toLowerCase().includes(lowercasedQuery)))
+    if (!query) return
+    const formattedQuery = query.toLowerCase().trim()
+    const filtered = data.projects.filter(p => p.name.toLowerCase().includes(formattedQuery)
+    || p.platform.toLowerCase().includes(formattedQuery)
+    || p.technologies.some(t => t.toLowerCase().includes(formattedQuery)))
     setProjects(filtered)
   }, [query])
+  
+  const clearQuery = () => {
+    setQuery('')
+    setProjects(data.projects)
+  }
 
   return (
     <div id='projects-page' className='col page-container'>
       <div className='col header'>
         <h1>Projects</h1>
-        <div className='col'>
-          <p>Search by name, platform, or technology</p>
-          <input type='text' onChange={e=>setQuery(e.target.value)}/>
-        </div>
+          <div className='col'>
+            <p>Search by name, platform, or technology</p>
+            <div className='row search-container'>
+              <input className='searchbar' type='text' value={query} onChange={e=>setQuery(e.target.value)}/>
+              <Button onClick={clearQuery}>Clear</Button>
+            </div>
+          </div>
       </div>
       <ul className='projects-list'>
         {sortedProjects.map((project, index) => 

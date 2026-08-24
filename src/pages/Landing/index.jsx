@@ -23,38 +23,38 @@ export default function LandingPage() {
       <div className='divider' />
       <div className='section col'>
         <h2>Experience</h2>
-        <div className='col list'>
+        <ul className='col list'>
           {data.experience.map((experience, index) => (
-            <ExperienceCell key={index} experience={experience} />
+            <li key={index}><ExperienceCell experience={experience} /></li>
           ))}
-        </div>
+        </ul>
       </div>
       <div className='divider' />
       <div className='section col media'>
         <h2>Media</h2>
-        <div className='list'>
+        <ul className='list'>
           {data.media.map((m, index) => (
-            <MediaCell key={index} media={m} />
+            <li key={index}><MediaCell media={m} /></li>
           ))}
-        </div>
+        </ul>
       </div>
       <div className='divider' />
       <div className='section col education'>
         <div className='schools-subsection col'>
           <h2>Education</h2>
-          <div className='list'>
+          <ul className='list'>
             {data.education.map((education, index) => (
-              <EducationCell key={index} education={education} />
+              <li key={index}><EducationCell education={education} /></li>
             ))}
-          </div>
+          </ul>
         </div>
         <div className='certifications-subsection col'>
           <h2>Certifications</h2>
-          <div className='list'>
+          <ul className='list'>
             {data.certificates.map((certification, index) => (
-              <CertificationCell key={index} certification={certification} />
+              <li key={index}><CertificationCell certification={certification} /></li>
             ))}
-          </div>
+          </ul>
         </div>
       </div>
       <div className='divider' />

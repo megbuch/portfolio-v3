@@ -87,17 +87,20 @@
         {
           "title" : "CVS Knows You Hate Those Locked Cabinets",
           "source": "New York Times",
-          "link": "https://www.nytimes.com/2025/01/28/business/cvs-app-pharmacy-locked-cabinets.html"
+          "link": "https://nytimes.com/2025/01/28/business/cvs-app-pharmacy-locked-cabinets.html",
+          "year": 2025
         },
         {
           "title" : "CVS testing new way for shoppers to open cabinet locks without an employee",
           "source": "ABC7 New York",
-          "link": "https://abc7ny.com/post/cvs-testing-new-nyc-shoppers-open-cabinet-locks-employee/15846979/"
+          "link": "https://abc7ny.com/post/cvs-testing-new-nyc-shoppers-open-cabinet-locks-employee/15846979/",
+          "year": 2025
         },
         {
-          "title" : "Stores trial alternative to plexiglass barriers after customer voice frustration",
+          "title" : "Stores trial alternative to plexiglass barriers after customers voice frustration",
           "source": "Good Morning America",
-          "link": "https://www.youtube.com/watch?v=P0nLvTuTXIU"
+          "link": "https://youtube.com/watch?v=P0nLvTuTXIU",
+          "year": 2024
         }
       ]
     }

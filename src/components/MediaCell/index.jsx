@@ -11,8 +11,10 @@ export default function MediaCell(props) {
       <ul className='sources-container col'>
         {m.sources.map((s, index) => (
           <li key={index}>
-            <p>{s.project}</p>
-            <p className='title'>{s.title}</p>
+            <div className='source-content-container row'>
+              <p>{s.source}<span className='title'>, {s.title}</span></p>
+              <p>{s.year}</p>
+            </div>
             <Link to={s.link} target='_blank'>{s.link.split('/')[2]} <span className='link-icon'><FaLink /></span></Link>
           </li>
         ))}

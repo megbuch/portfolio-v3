@@ -6,6 +6,14 @@
       flex-direction: row;
       justify-content: space-between; 
     }
+
+    .search-container {
+      gap: var(--pad-xs);
+
+      .searchbar {
+        flex-grow: 1;
+      }
+    }
   }
 
   .projects-list {
