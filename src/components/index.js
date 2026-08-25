@@ -1,3 +1,4 @@
+export { default as Background } from './Background'
 export { default as Button } from './Button'
 export { default as CertificationCell } from './CertificationCell'
 export { default as EducationCell } from './EducationCell'
