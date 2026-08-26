@@ -7,17 +7,21 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --color-background: #e5edfc;
+  --cloud-dancer: #F0EEE9;
+  --color-background: linear-gradient(var(--cloud-dancer), #529dff);
   --color-on-background: #1d1d1d;
   --color-on-background-dark: #000000;
-  --color-background-blobs: #F0EEE9;
 
   --color-surface: #fdfdfd;
   --color-on-surface: #000;
 
-  --color-primary: #5085a7;
-  --color-primary-hover: #336b8f;
+  --color-primary-light: #80aae2;
+  --color-primary: #406296;
+  --color-primary-hover: #18478f;
   --color-on-primary: #FFFFFF;
+
+  --color-secondary: #80aae2;
+  --color-on-secondary: #FFFFFF;
 
   --color-neutral: #5e5d5d;
   --color-neutral-light: #cccccc;
@@ -146,7 +150,7 @@ select, input[type='text'] {
   font-size: var(--font-size-sm);
   
   div {
-    background-color: var(--color-primary);
+    background-color: var(--color-secondary);
     color: var(--color-on-primary);
     padding: var(--pad-xs) var(--pad-sm);
     border-radius: var(--corner-radius);

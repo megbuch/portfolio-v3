@@ -2,10 +2,9 @@ import './styles.scss'
 
 export default function Background() {
   const colorBlobs = [
-    { size: 300, top: '5%', left: '-5%', color: 'var(--color-background-blobs)' },
-    { size: 500, top: '20%', left: '50%', color: 'var(--color-background-blobs)' },
-    { size: 300, top: '60%', left: '80%', color: 'var(--color-background-blobs)' },
-    { size: 800, top: '80%', left: '5%', color: 'var(--color-background-blobs)' },
+    { size: 300, top: '5%', left: '-5%', color: '#ffede7' },
+    { size: 1000, top: '20%', left: '50%', color: '#cccdf7' },
+    { size: 800, top: '80%', left: '-20%', color: '#d0e3e9' },
   ]
 
   return (
