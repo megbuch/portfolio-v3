@@ -76,10 +76,7 @@
 
 	.highlights-container {
 		gap: var(--pad-md);
-		justify-content: center;
-		@media (min-width: 600px) {
-			justify-content: left;
-		}
+		justify-content: space-evenly;
 
 		.value {
 			color: var(--color-primary);
