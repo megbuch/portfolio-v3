@@ -1,15 +1,12 @@
 import './styles.scss'
 
 export default function EducationCell(props) {
-	const { education: e } = props
+	const { item: education } = props
 
 	return (
-		<div className='education-cell-comp row'>
-			<div className='col'>
-				<h4>{e.degree}</h4>
-				<p>{e.school}</p>
-			</div>
-			<p className='date'>{e.graduationDate}</p>
+		<div className='education-cell-comp col'>
+			<h3>{education.school}</h3>
+			<p>{education.degree}</p>
 		</div>
 	)
 }

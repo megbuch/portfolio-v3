@@ -7,6 +7,7 @@ import {
 	SocialLinks,
 	Button,
 	Divider,
+	Timeline,
 } from '../../components'
 import headshot from '/assets/headshot.jpg'
 import data from '../../data.json'
@@ -30,45 +31,26 @@ export default function LandingPage() {
 					<SocialLinks />
 				</div>
 			</div>
-			<Divider />
+			<Divider title='Experience' />
 			<div className='section col'>
-				<h2>Experience</h2>
-				<ul className='col list'>
-					{data.experience.map((experience, index) => (
+				<Timeline items={data.experience} cell={ExperienceCell} />
+			</div>
+			<Divider title='Education' />
+			<div className='section col'>
+				<Timeline items={data.education} cell={EducationCell} />
+			</div>
+			<Divider title='Certifications' />
+			<div className='section col'>
+				<ul className='certifications-list col'>
+					{data.certificates.map((certification, index) => (
 						<li key={index}>
-							<ExperienceCell experience={experience} />
+							<CertificationCell certification={certification} />
 						</li>
 					))}
 				</ul>
 			</div>
-			<Divider />
-			<div className='section col education'>
-				<div className='schools-subsection col'>
-					<h2>Education</h2>
-					<ul className='small-list'>
-						{data.education.map((education, index) => (
-							<li key={index}>
-								<EducationCell education={education} />
-							</li>
-						))}
-					</ul>
-				</div>
-				<div className='certifications-subsection col'>
-					<h2>Certifications</h2>
-					<ul className='small-list'>
-						{data.certificates.map((certification, index) => (
-							<li key={index}>
-								<CertificationCell
-									certification={certification}
-								/>
-							</li>
-						))}
-					</ul>
-				</div>
-			</div>
-			<Divider />
+			<Divider title='Featured Projects' />
 			<div className='section col featured-projects'>
-				<h2>Featured Projects</h2>
 				<ul className='projects-list'>
 					{featuredProjects.map((project, index) => (
 						<li className='project' key={index}>

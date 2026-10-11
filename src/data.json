@@ -24,22 +24,22 @@
 		{
 			"degree": "M.S. in Computer Science",
 			"school": "Georgia Institute of Technology",
-			"graduationDate": "Est. May 2030"
+			"date": "Est. May 2030"
 		},
 		{
 			"degree": "B.S. in Software Engineering",
 			"school": "Western Governors University",
-			"graduationDate": "Oct. 2025"
+			"date": "Oct. 2025"
 		},
 		{
 			"degree": "Software Engineering Immersive",
 			"school": "General Assembly",
-			"graduationDate": "Mar. 2023"
+			"date": "Mar. 2023"
 		},
 		{
 			"degree": "A.S. in Business Administration",
 			"school": "De Anza College",
-			"graduationDate": "Jun. 2020"
+			"date": "Jun. 2020"
 		}
 	],
 	"experience": [
@@ -55,12 +55,8 @@
 				"Javascript",
 				"TypeScript",
 				"Node.js",
-				"NestJS",
 				"React",
-				"PostgreSQL",
-				"HTML",
-				"CSS & SCSS",
-				"Web Development"
+				"PostgreSQL"
 			]
 		},
 		{
@@ -74,17 +70,11 @@
 			"technologies": [
 				"Javascript",
 				"React",
-				"Electron",
 				"Node.js",
 				"Java",
 				"Swift",
 				"Ruby on Rails",
-				"PostgreSQL",
-				"HTML",
-				"CSS & SCSS",
-				"Android Development",
-				"iOS Development",
-				"Web Development"
+				"PostgreSQL"
 			]
 		},
 		{
@@ -95,14 +85,7 @@
 			"previousTitles": [],
 			"date": "Mar. 2023 - May 2023",
 			"description": "Contributed to SpaceLab's open-source initiatives, collaborating with other developers to build the main website and Exoplanetarium project.",
-			"technologies": [
-				"Javascript",
-				"React",
-				"Node.js",
-				"HTML",
-				"CSS & SCSS",
-				"Web Development"
-			]
+			"technologies": ["Javascript", "React", "Node.js"]
 		}
 	],
 	"projects": [

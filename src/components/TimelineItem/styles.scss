@@ -1,0 +1,73 @@
+.timeline-item-comp {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: var(--pad-xs);
+	padding-left: var(--pad-sm);
+	@media (min-width: 600px) {
+		flex-direction: row;
+		gap: var(--pad-md);
+		padding-left: 0;
+	}
+
+	.rail {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 4px;
+		align-items: center;
+		width: 2px;
+		background: var(--color-primary-light);
+		transform: translateY(var(--pad-sm));
+		@media (min-width: 600px) {
+			position: relative;
+			top: auto;
+			bottom: auto;
+			left: auto;
+			align-self: stretch;
+			margin: 0 var(--pad-md);
+		}
+
+		.dot {
+			position: absolute;
+			height: 10px;
+			width: 10px;
+			background: var(--color-on-primary);
+			border: 2px solid var(--color-primary-dark);
+			border-radius: 50%;
+
+			&.current {
+				background: var(--color-primary-dark);
+			}
+		}
+	}
+
+	.date {
+		align-self: start;
+		transform: translateY(var(--pad-xs));
+		padding-left: var(--pad-md);
+		color: var(--color-primary-dark);
+		font-weight: var(--font-weight-bold);
+		@media (min-width: 600px) {
+			flex: 0.2;
+			text-align: right;
+		}
+	}
+
+	.item {
+		padding-bottom: var(--pad-xl);
+		padding-left: var(--pad-md);
+		@media (min-width: 600px) {
+			flex: 0.8;
+			padding-left: 0;
+		}
+	}
+
+	&:last-child .item {
+		padding-bottom: 0;
+	}
+
+	&:last-child .rail {
+		background: none;
+	}
+}

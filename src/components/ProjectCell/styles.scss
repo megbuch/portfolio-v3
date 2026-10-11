@@ -3,8 +3,12 @@
 	gap: var(--pad-xs);
 	border-radius: var(--corner-radius);
 	box-shadow: var(--box-shadow);
-	background: var(--color-surface);
+	background: var(--color-surface-transparent);
 	color: var(--color-on-surface);
+
+	.technologies-list {
+		margin: var(--pad-sm) 0;
+	}
 
 	.image-container {
 		overflow: hidden;

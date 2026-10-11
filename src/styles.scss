@@ -13,10 +13,12 @@
 	--color-on-background-dark: #000000;
 
 	--color-surface: #fdfdfd;
+	--color-surface-transparent: #fdfdfdb2;
 	--color-on-surface: #000;
 
-	--color-primary-light: #738fb9;
-	--color-primary: #406296;
+	--color-primary-light: #2758a138;
+	--color-primary: #2758a1;
+	--color-primary-dark: #2a4166;
 	--color-primary-hover: #18478f;
 	--color-on-primary: #ffffff;
 
@@ -26,7 +28,6 @@
 	--color-on-neutral: #212121;
 
 	--color-shadow: rgba(18, 18, 18, 0.205);
-	--color-divider: #a5c0e7;
 
 	--font-weight-light: 300;
 	--font-weight-reg: 400;
@@ -47,7 +48,7 @@
 	--pad-xl: 36px;
 	--pad-xxl: 80px;
 
-	--corner-radius: 4px;
+	--corner-radius: 8px;
 
 	--navigation-height: 48px;
 
@@ -86,8 +87,7 @@ body {
 .page-container {
 	width: 100vw;
 	margin: 0 auto;
-	padding: var(--pad-xxl) var(--pad-md) var(--pad-md);
-
+	padding: var(--pad-xl) var(--pad-md) var(--pad-md);
 	@media (min-width: 600px) {
 		width: 90vw;
 	}
@@ -133,18 +133,6 @@ input[type='text'] {
 	flex-direction: column;
 }
 
-.list {
-	display: flex;
-	flex-direction: column;
-	gap: var(--pad-lg);
-}
-
-.small-list {
-	display: flex;
-	flex-direction: column;
-	gap: var(--pad-sm);
-}
-
 .icon {
 	font-size: 38px;
 }
@@ -156,14 +144,16 @@ input[type='text'] {
 .technologies-list {
 	flex-wrap: wrap;
 	margin: var(--pad-sm) 0;
+	margin: var(--pad-sm) 0;
 	gap: var(--pad-sm);
 	font-size: var(--font-size-xs);
 
 	.technology-tag {
-		background-color: var(--color-primary-light);
-		color: var(--color-on-primary);
+		background-color: var(--color-on-primary);
+		color: var(--color-primary-dark);
 		padding: var(--pad-xs) var(--pad-sm);
-		border-radius: var(--corner-radius);
+		border-radius: 90px;
+		border: 1px solid var(--color-primary-light);
 	}
 }
 

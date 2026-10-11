@@ -1,11 +1,19 @@
 .divider-comp {
-	width: 100%;
-	height: 1px;
-	background-color: var(--color-divider);
 	margin: var(--pad-xl) 0;
 
-	&.transparent {
-		height: 0px;
-		margin: var(--pad-lg) 0;
+	.left,
+	.right {
+		width: 100%;
+		height: 1px;
+		background-color: var(--color-primary-light);
+	}
+
+	p {
+		padding: var(--pad-md);
+		text-transform: uppercase;
+		font-size: var(--font-size-sm);
+		font-weight: bold;
+		color: var(--color-primary-dark);
+		text-wrap: nowrap;
 	}
 }

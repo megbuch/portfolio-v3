@@ -10,8 +10,8 @@ export default function Navigation() {
 
 	const items = useMemo(
 		() => [
-			{ path: '/', icon: <FaCircleUser /> },
-			{ path: '/projects', icon: <FaFolder /> },
+			{ path: '/', icon: <FaCircleUser />, text: 'Profile' },
+			{ path: '/projects', icon: <FaFolder />, text: 'Projects' },
 		],
 		[],
 	)
@@ -27,15 +27,14 @@ export default function Navigation() {
 					{items.map((item) => (
 						<div
 							key={item.path}
-							className={`item ${activeItem == item.path && 'active'}`}
+							className={`item row ${activeItem == item.path && 'active'}`}
 							onClick={() => navigate(item.path)}
 						>
-							{item.icon}
+							<span className='row'>{item.icon}</span>
+							<span className='row'>{item.text}</span>
 						</div>
 					))}
 				</div>
-				<div className='side left'></div>
-				<div className='side right'></div>
 			</div>
 		</div>
 	)

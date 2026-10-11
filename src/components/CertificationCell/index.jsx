@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { FaLink } from 'react-icons/fa'
+import './styles.scss'
 
 export default function CertificationCell(props) {
 	const { certification: c } = props
