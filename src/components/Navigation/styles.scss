@@ -1,60 +1,60 @@
 .navigation-comp {
-  position: fixed;
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  z-index: 600;
-  
-  .navigation-container {
-    position: relative;
-    margin: var(--pad-md);
-    background: var(--color-surface);
-    height: var(--navigation-height);
-    box-shadow: var(--box-shadow);
-    z-index: 600;
-    
-    .navigation-items {
-      z-index: 700;
-      justify-content: space-evenly;
-      align-items: center;
-      height: 100%;
-      font-size: var(--icon-size);
-  
-      .item {
-        color: var(--color-primary);
-        display: flex;
-        align-items: center;
-        padding: var(--pad-md);
-        height: 100%;
-        
-        &:hover {
-          cursor: pointer;
-          color: var(--color-primary-hover);
-        }
-  
-        &.active {
-          background: var(--color-neutral-hover);
-          color: var(--color-primary-hover);
-        }
-      }
-    }
-  
-    .side {
-      position: absolute;
-      border-radius: 50%;
-      background: var(--color-surface);
-      height: var(--navigation-height);
-      width: var(--navigation-height);
-      z-index: 500;
-  
-      &.left {
-        left: -25px;
-      }
-  
-      &.right {
-        right: -25px;
-      }
-    }
-  }
+	position: fixed;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: center;
+	z-index: 600;
+
+	.navigation-container {
+		position: relative;
+		margin: var(--pad-md);
+		background: var(--color-surface);
+		height: var(--navigation-height);
+		box-shadow: var(--box-shadow);
+		z-index: 600;
+
+		.navigation-items {
+			z-index: 700;
+			justify-content: space-evenly;
+			align-items: center;
+			height: 100%;
+			font-size: var(--icon-size);
+
+			.item {
+				color: var(--color-primary);
+				display: flex;
+				align-items: center;
+				padding: var(--pad-md);
+				height: 100%;
+
+				&:hover {
+					cursor: pointer;
+					color: var(--color-primary-hover);
+				}
+
+				&.active {
+					background: var(--color-neutral-hover);
+					color: var(--color-primary-hover);
+				}
+			}
+		}
+
+		.side {
+			position: absolute;
+			border-radius: 50%;
+			background: var(--color-surface);
+			height: var(--navigation-height);
+			width: var(--navigation-height);
+			z-index: 500;
+
+			&.left {
+				left: -25px;
+			}
+
+			&.right {
+				right: -25px;
+			}
+		}
+	}
 }

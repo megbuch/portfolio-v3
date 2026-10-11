@@ -1,0 +1,11 @@
+.divider-comp {
+	width: 100%;
+	height: 1px;
+	background-color: var(--color-divider);
+	margin: var(--pad-xl) 0;
+
+	&.transparent {
+		height: 0px;
+		margin: var(--pad-lg) 0;
+	}
+}

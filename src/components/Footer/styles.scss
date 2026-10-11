@@ -1,19 +1,19 @@
 .footer-comp {
-  align-items: center;
-  justify-content: center;
-  border-radius: var(--corner-radius);
-  padding: var(--pad-lg);
-  
-  .links {
-    display: flex;
-    justify-content: center;
-    gap: var(--pad-lg);
-    margin-bottom: var(--pad-md);
-  }
+	align-items: center;
+	justify-content: center;
+	border-radius: var(--corner-radius);
+	padding: var(--pad-lg);
 
-  .project-description {
-    max-width: 800px;
-    text-align: center;
-    font-size: var(--font-size-sm);
-  }
+	.links {
+		display: flex;
+		justify-content: center;
+		gap: var(--pad-lg);
+		margin-bottom: var(--pad-md);
+	}
+
+	.portfolio-description {
+		max-width: 800px;
+		text-align: center;
+		font-size: var(--font-size-xs);
+	}
 }

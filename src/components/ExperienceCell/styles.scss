@@ -1,11 +1,8 @@
 .experience-cell-comp {
-  gap: var(--pad-sm);
+	gap: var(--pad-sm);
 
-  .role {
-    justify-content: space-between;
-  }
-
-  .duties-list {
-    gap: var(--pad-sm);
-  }
+	.title-container {
+		justify-content: space-between;
+		align-items: center;
+	}
 }

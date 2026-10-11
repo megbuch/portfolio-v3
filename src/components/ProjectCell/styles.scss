@@ -1,19 +1,19 @@
 .project-cell-comp {
-  padding: var(--pad-lg);
-  gap: var(--pad-xs);
-  border-radius: var(--corner-radius);
-  box-shadow: var(--box-shadow);
-  background: var(--color-surface);
-  color: var(--color-on-surface);
+	padding: var(--pad-lg);
+	gap: var(--pad-xs);
+	border-radius: var(--corner-radius);
+	box-shadow: var(--box-shadow);
+	background: var(--color-surface);
+	color: var(--color-on-surface);
 
-  .image-container {
-    overflow: hidden;
-    max-height: 300px;
-    
-    img {
-      width: 100%;
-      object-fit: cover;
-      border-radius: var(--corner-radius);
-    }
-  }
+	.image-container {
+		overflow: hidden;
+		max-height: 300px;
+
+		img {
+			width: 100%;
+			object-fit: cover;
+			border-radius: var(--corner-radius);
+		}
+	}
 }

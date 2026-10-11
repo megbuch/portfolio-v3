@@ -1,68 +1,67 @@
 .landing-page {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 
-  .divider {
-    width: 100%;
-    height: 1px;
-    background-color: var(--color-secondary);
-    margin: var(--pad-xl) 0;
-}
+	.section {
+		gap: var(--pad-sm);
+	}
 
-  .section { gap: var(--pad-sm); }
+	.profile {
+		justify-content: center;
+		gap: var(--pad-md);
+		@media (min-width: 800px) {
+			gap: var(--pad-xl);
+		}
 
-  .profile {
-    justify-content: center;
-    gap: var(--pad-md);
-    @media (min-width: 800px) { 
-      gap: var(--pad-xl);
-    }
-    
-    .content-container {
-      gap: var(--pad-sm);
-      
-      .headline {
-        font-size: var(--font-size-md);
-        @media (min-width: 800px) { 
-          font-size: var(--font-size-lg);
-        }
-      }
-    }
-    
-    .image-container {
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      overflow: hidden;
-      flex-shrink: 0;
-      @media (min-width: 800px) { 
-        width: 200px;
-        height: 200px;
-      }
-      
-      img {
-        width: 100%;
-        overflow: hidden;
-      }
-    }
-  }
+		.content-container {
+			gap: var(--pad-sm);
 
-  .education {
-    gap: var(--pad-xl);
-    @media (min-width: 800px) { 
-      flex-direction: row; 
-      justify-content: space-between;
-      gap: var(--pad-xxl);
-    }
+			.headline {
+				font-size: var(--font-size-md);
+				@media (min-width: 800px) {
+					font-size: var(--font-size-lg);
+				}
+			}
+		}
 
-    .schools-subsection { 
-      gap: var(--pad-sm);
-      @media (min-width: 800px) { flex-grow: .5; }
-    }
+		.image-container {
+			width: 80px;
+			height: 80px;
+			border-radius: 50%;
+			overflow: hidden;
+			flex-shrink: 0;
+			@media (min-width: 800px) {
+				width: 200px;
+				height: 200px;
+			}
 
-    .certifications-subsection { 
-      gap: var(--pad-sm);
-      @media (min-width: 800px) { flex-grow: .4; }
-    }
-  }
+			img {
+				width: 100%;
+				overflow: hidden;
+			}
+		}
+	}
+
+	.education {
+		gap: var(--pad-xl);
+		@media (min-width: 800px) {
+			flex-direction: row;
+			justify-content: space-between;
+			gap: var(--pad-xxl);
+		}
+
+		.schools-subsection {
+			gap: var(--pad-sm);
+			@media (min-width: 800px) {
+				flex-grow: 0.5;
+			}
+		}
+
+		.certifications-subsection {
+			gap: var(--pad-sm);
+			@media (min-width: 800px) {
+				flex-grow: 0.4;
+			}
+		}
+	}
 }
