@@ -13,13 +13,12 @@
 	--color-on-background-dark: #000000;
 
 	--color-surface: #fdfdfd;
-	--color-surface-transparent: #fdfdfdb2;
+	--color-surface-transparent: #fdfdfda6;
 	--color-on-surface: #000;
 
-	--color-primary-light: #2758a138;
-	--color-primary: #2758a1;
-	--color-primary-dark: #2a4166;
-	--color-primary-hover: #18478f;
+	--color-primary-light: #2a41663d;
+	--color-primary: #2a4166;
+	--color-primary-hover: #143364;
 	--color-on-primary: #ffffff;
 
 	--color-neutral: #5e5d5d;
@@ -48,7 +47,8 @@
 	--pad-xl: 36px;
 	--pad-xxl: 80px;
 
-	--corner-radius: 8px;
+	--corner-radius: 90px;
+	--corner-radius-sm: 8px;
 
 	--navigation-height: 48px;
 
@@ -150,9 +150,9 @@ input[type='text'] {
 
 	.technology-tag {
 		background-color: var(--color-on-primary);
-		color: var(--color-primary-dark);
+		color: var(--color-primary);
 		padding: var(--pad-xs) var(--pad-sm);
-		border-radius: 90px;
+		border-radius: var(--corner-radius);
 		border: 1px solid var(--color-primary-light);
 	}
 }

@@ -2,53 +2,6 @@
 	display: flex;
 	flex-direction: column;
 
-	.section {
-		gap: var(--pad-sm);
-
-		.section-title {
-			text-align: center;
-			text-transform: uppercase;
-			font-size: var(--font-size-md);
-			color: var(--color-primary);
-		}
-	}
-
-	.profile {
-		justify-content: center;
-		gap: var(--pad-md);
-		@media (min-width: 800px) {
-			gap: var(--pad-xl);
-		}
-
-		.content-container {
-			gap: var(--pad-sm);
-
-			.headline {
-				font-size: var(--font-size-md);
-				@media (min-width: 800px) {
-					font-size: var(--font-size-lg);
-				}
-			}
-		}
-
-		.image-container {
-			width: 80px;
-			height: 80px;
-			border-radius: 50%;
-			overflow: hidden;
-			flex-shrink: 0;
-			@media (min-width: 800px) {
-				width: 200px;
-				height: 200px;
-			}
-
-			img {
-				width: 100%;
-				overflow: hidden;
-			}
-		}
-	}
-
 	.education {
 		gap: var(--pad-xl);
 		@media (min-width: 800px) {

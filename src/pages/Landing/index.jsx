@@ -1,15 +1,14 @@
 import { useNavigate } from 'react-router-dom'
 import {
+	Profile,
 	ExperienceCell,
 	EducationCell,
 	CertificationCell,
 	ProjectCell,
-	SocialLinks,
 	Button,
 	Divider,
 	Timeline,
 } from '../../components'
-import headshot from '/assets/headshot.jpg'
 import data from '../../data.json'
 import './styles.scss'
 
@@ -21,16 +20,7 @@ export default function LandingPage() {
 
 	return (
 		<div className='col landing-page page-container'>
-			<div className='section row profile'>
-				<div className='image-container'>
-					<img src={headshot} />
-				</div>
-				<div className='content-container col'>
-					<h1>Meghan Bucher</h1>
-					<p className='headline'>{data.profile.headline}</p>
-					<SocialLinks />
-				</div>
-			</div>
+			<Profile />
 			<Divider title='Experience' />
 			<div className='section col'>
 				<Timeline items={data.experience} cell={ExperienceCell} />

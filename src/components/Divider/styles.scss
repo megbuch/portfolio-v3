@@ -8,12 +8,12 @@
 		background-color: var(--color-primary-light);
 	}
 
-	p {
+	h2 {
 		padding: var(--pad-md);
 		text-transform: uppercase;
 		font-size: var(--font-size-sm);
 		font-weight: bold;
-		color: var(--color-primary-dark);
+		color: var(--color-primary);
 		text-wrap: nowrap;
 	}
 }

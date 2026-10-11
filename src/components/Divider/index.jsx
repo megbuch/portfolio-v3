@@ -6,7 +6,7 @@ export default function Divider(props) {
 	return (
 		<div className='divider-comp row'>
 			<div className='left' />
-			{title && <p>{title}</p>}
+			{title && <h2>{title}</h2>}
 			<div className='right' />
 		</div>
 	)

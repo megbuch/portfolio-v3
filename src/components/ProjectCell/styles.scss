@@ -1,7 +1,7 @@
 .project-cell-comp {
 	padding: var(--pad-lg);
 	gap: var(--pad-xs);
-	border-radius: var(--corner-radius);
+	border-radius: var(--corner-radius-sm);
 	box-shadow: var(--box-shadow);
 	background: var(--color-surface-transparent);
 	color: var(--color-on-surface);
@@ -17,7 +17,7 @@
 		img {
 			width: 100%;
 			object-fit: cover;
-			border-radius: var(--corner-radius);
+			border-radius: var(--corner-radius-sm);
 		}
 	}
 }

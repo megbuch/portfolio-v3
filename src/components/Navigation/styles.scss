@@ -13,7 +13,7 @@
 		-webkit-backdrop-filter: blur(12px);
 		height: var(--navigation-height);
 		box-shadow: var(--box-shadow);
-		border-radius: 90px;
+		border-radius: var(--corner-radius);
 		justify-content: center;
 		margin: var(--pad-md);
 		width: 70%;
@@ -31,7 +31,7 @@
 				font-weight: var(--font-weight-bold);
 				gap: var(--pad-sm);
 				padding: var(--pad-sm) var(--pad-md);
-				border-radius: 90px;
+				border-radius: var(--corner-radius);
 
 				&:hover {
 					cursor: pointer;
